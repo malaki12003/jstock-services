@@ -1,0 +1,2065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:yahoo="http://www.yahooapis.com/v1/base.rng"
+	yahoo:count="226" yahoo:created="2014-11-22T09:08:11Z" yahoo:lang="es-ES">
+	<diagnostics>
+		<url execution-start-time="0" execution-stop-time="2"
+			execution-time="2"><![CDATA[http://www.datatables.org/yahoo/finance/yahoo.finance.historicaldata.xml]]></url>
+		<publiclyCallable>true</publiclyCallable>
+		<cache execution-start-time="5" execution-stop-time="6"
+			execution-time="1" method="GET" type="MEMCACHED"><![CDATA[4c72548fea3e055264920dc440b6cef1]]></cache>
+		<url execution-start-time="6" execution-stop-time="21"
+			execution-time="15"><![CDATA[http://ichart.finance.yahoo.com/table.csv?g=d&f=2014&e=22&c=2014&b=1&a=0&d=10&s=BA]]></url>
+		<query execution-start-time="6" execution-stop-time="23"
+			execution-time="17"
+			params="{url=[http://ichart.finance.yahoo.com/table.csv?g=d&amp;f=2014&amp;e=22&amp;c=2014&amp;b=1&amp;a=0&amp;d=10&amp;s=BA]}"><![CDATA[select * from csv(0,1) where url=@url]]></query>
+		<cache execution-start-time="23" execution-stop-time="24"
+			execution-time="1" method="GET" type="MEMCACHED"><![CDATA[28133fd08ed6baff85841b24c28a7980]]></cache>
+		<url execution-start-time="24" execution-stop-time="39"
+			execution-time="15"><![CDATA[http://ichart.finance.yahoo.com/table.csv?g=d&f=2014&e=22&c=2014&b=1&a=0&d=10&s=BA]]></url>
+		<query execution-start-time="24" execution-stop-time="41"
+			execution-time="17"
+			params="{columnsNames=[Date,Open,High,Low,Close,Volume,Adj_Close], url=[http://ichart.finance.yahoo.com/table.csv?g=d&amp;f=2014&amp;e=22&amp;c=2014&amp;b=1&amp;a=0&amp;d=10&amp;s=BA]}"><![CDATA[select * from csv(2,0) where url=@url and columns=@columnsNames]]></query>
+		<javascript execution-start-time="3" execution-stop-time="680"
+			execution-time="676" instructions-used="19488760" table-name="yahoo.finance.historicaldata"></javascript>
+		<user-time>685</user-time>
+		<service-time>34</service-time>
+		<build-version>0.2.212</build-version>
+	</diagnostics>
+	<results>
+		<quote Symbol="BA">
+			<Date>2014-11-21</Date>
+			<Open>132.72</Open>
+			<High>133.36</High>
+			<Low>132.51</Low>
+			<Close>132.78</Close>
+			<Volume>4226700</Volume>
+			<Adj_Close>132.78</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-20</Date>
+			<Open>130.94</Open>
+			<High>132.40</High>
+			<Low>130.71</Low>
+			<Close>131.70</Close>
+			<Volume>4052800</Volume>
+			<Adj_Close>131.70</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-19</Date>
+			<Open>130.59</Open>
+			<High>132.74</High>
+			<Low>130.25</Low>
+			<Close>131.61</Close>
+			<Volume>5036700</Volume>
+			<Adj_Close>131.61</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-18</Date>
+			<Open>128.55</Open>
+			<High>131.33</High>
+			<Low>128.04</Low>
+			<Close>130.66</Close>
+			<Volume>5701200</Volume>
+			<Adj_Close>130.66</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-17</Date>
+			<Open>128.70</Open>
+			<High>129.17</High>
+			<Low>127.55</Low>
+			<Close>128.42</Close>
+			<Volume>3752900</Volume>
+			<Adj_Close>128.42</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-14</Date>
+			<Open>128.53</Open>
+			<High>129.78</High>
+			<Low>127.85</Low>
+			<Close>128.86</Close>
+			<Volume>6235200</Volume>
+			<Adj_Close>128.86</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-13</Date>
+			<Open>125.74</Open>
+			<High>128.96</High>
+			<Low>125.74</Low>
+			<Close>128.53</Close>
+			<Volume>5813500</Volume>
+			<Adj_Close>128.53</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-12</Date>
+			<Open>124.51</Open>
+			<High>126.19</High>
+			<Low>124.47</Low>
+			<Close>125.87</Close>
+			<Volume>3074700</Volume>
+			<Adj_Close>125.87</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-11</Date>
+			<Open>124.58</Open>
+			<High>125.73</High>
+			<Low>124.45</Low>
+			<Close>125.36</Close>
+			<Volume>3053500</Volume>
+			<Adj_Close>125.36</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-10</Date>
+			<Open>124.87</Open>
+			<High>124.99</High>
+			<Low>123.80</Low>
+			<Close>124.64</Close>
+			<Volume>2622700</Volume>
+			<Adj_Close>124.64</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-07</Date>
+			<Open>124.93</Open>
+			<High>124.94</High>
+			<Low>124.17</Low>
+			<Close>124.45</Close>
+			<Volume>2366700</Volume>
+			<Adj_Close>124.45</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-06</Date>
+			<Open>124.48</Open>
+			<High>124.80</High>
+			<Low>123.37</Low>
+			<Close>124.58</Close>
+			<Volume>2341900</Volume>
+			<Adj_Close>124.58</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-05</Date>
+			<Open>126.01</Open>
+			<High>126.25</High>
+			<Low>124.20</Low>
+			<Close>124.22</Close>
+			<Volume>3334000</Volume>
+			<Adj_Close>124.22</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-04</Date>
+			<Open>125.94</Open>
+			<High>126.71</High>
+			<Low>125.26</Low>
+			<Close>125.84</Close>
+			<Volume>3684600</Volume>
+			<Adj_Close>125.11</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-11-03</Date>
+			<Open>125.35</Open>
+			<High>126.25</High>
+			<Low>124.89</Low>
+			<Close>126.03</Close>
+			<Volume>3902700</Volume>
+			<Adj_Close>125.30</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-31</Date>
+			<Open>125.03</Open>
+			<High>125.89</High>
+			<Low>124.73</Low>
+			<Close>124.91</Close>
+			<Volume>4665300</Volume>
+			<Adj_Close>124.19</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-30</Date>
+			<Open>122.52</Open>
+			<High>124.12</High>
+			<Low>122.01</Low>
+			<Close>123.82</Close>
+			<Volume>2569600</Volume>
+			<Adj_Close>123.10</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-29</Date>
+			<Open>124.48</Open>
+			<High>124.48</High>
+			<Low>122.56</Low>
+			<Close>123.08</Close>
+			<Volume>3241700</Volume>
+			<Adj_Close>122.37</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-28</Date>
+			<Open>122.50</Open>
+			<High>123.79</High>
+			<Low>121.96</Low>
+			<Close>123.61</Close>
+			<Volume>4159000</Volume>
+			<Adj_Close>122.89</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-27</Date>
+			<Open>122.13</Open>
+			<High>122.23</High>
+			<Low>121.26</Low>
+			<Close>122.12</Close>
+			<Volume>2940300</Volume>
+			<Adj_Close>121.41</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-24</Date>
+			<Open>122.20</Open>
+			<High>122.84</High>
+			<Low>121.26</Low>
+			<Close>122.24</Close>
+			<Volume>4013300</Volume>
+			<Adj_Close>121.53</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-23</Date>
+			<Open>121.27</Open>
+			<High>122.88</High>
+			<Low>121.06</Low>
+			<Close>122.03</Close>
+			<Volume>7799700</Volume>
+			<Adj_Close>121.32</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-22</Date>
+			<Open>127.99</Open>
+			<High>128.00</High>
+			<Low>121.34</Low>
+			<Close>121.45</Close>
+			<Volume>13844400</Volume>
+			<Adj_Close>120.75</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-21</Date>
+			<Open>125.21</Open>
+			<High>127.24</High>
+			<Low>124.93</Low>
+			<Close>127.12</Close>
+			<Volume>5204500</Volume>
+			<Adj_Close>126.38</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-20</Date>
+			<Open>123.39</Open>
+			<High>124.72</High>
+			<Low>123.00</Low>
+			<Close>124.31</Close>
+			<Volume>3676300</Volume>
+			<Adj_Close>123.59</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-17</Date>
+			<Open>122.05</Open>
+			<High>123.87</High>
+			<Low>121.78</Low>
+			<Close>123.24</Close>
+			<Volume>4872400</Volume>
+			<Adj_Close>122.53</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-16</Date>
+			<Open>118.91</Open>
+			<High>121.30</High>
+			<Low>118.39</Low>
+			<Close>120.29</Close>
+			<Volume>4492500</Volume>
+			<Adj_Close>119.59</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-15</Date>
+			<Open>121.06</Open>
+			<High>121.12</High>
+			<Low>116.32</Low>
+			<Close>120.19</Close>
+			<Volume>7819000</Volume>
+			<Adj_Close>119.49</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-14</Date>
+			<Open>121.84</Open>
+			<High>123.37</High>
+			<Low>120.72</Low>
+			<Close>122.29</Close>
+			<Volume>3768200</Volume>
+			<Adj_Close>121.58</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-13</Date>
+			<Open>122.05</Open>
+			<High>123.19</High>
+			<Low>120.26</Low>
+			<Close>120.45</Close>
+			<Volume>3878600</Volume>
+			<Adj_Close>119.75</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-10</Date>
+			<Open>122.87</Open>
+			<High>123.36</High>
+			<Low>121.50</Low>
+			<Close>121.50</Close>
+			<Volume>4214200</Volume>
+			<Adj_Close>120.80</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-09</Date>
+			<Open>124.72</Open>
+			<High>124.75</High>
+			<Low>122.31</Low>
+			<Close>122.76</Close>
+			<Volume>4874700</Volume>
+			<Adj_Close>122.05</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-08</Date>
+			<Open>123.47</Open>
+			<High>125.09</High>
+			<Low>122.15</Low>
+			<Close>124.98</Close>
+			<Volume>3610300</Volume>
+			<Adj_Close>124.25</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-07</Date>
+			<Open>125.52</Open>
+			<High>125.52</High>
+			<Low>123.29</Low>
+			<Close>123.32</Close>
+			<Volume>3554900</Volume>
+			<Adj_Close>122.60</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-06</Date>
+			<Open>127.09</Open>
+			<High>127.19</High>
+			<Low>125.38</Low>
+			<Close>126.26</Close>
+			<Volume>2681000</Volume>
+			<Adj_Close>125.53</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-03</Date>
+			<Open>124.66</Open>
+			<High>126.87</High>
+			<Low>124.66</Low>
+			<Close>126.36</Close>
+			<Volume>3075900</Volume>
+			<Adj_Close>125.63</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-02</Date>
+			<Open>124.40</Open>
+			<High>125.55</High>
+			<Low>123.84</Low>
+			<Close>124.17</Close>
+			<Volume>3204500</Volume>
+			<Adj_Close>123.45</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-10-01</Date>
+			<Open>127.37</Open>
+			<High>127.37</High>
+			<Low>124.31</Low>
+			<Close>124.67</Close>
+			<Volume>5265200</Volume>
+			<Adj_Close>123.95</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-30</Date>
+			<Open>128.57</Open>
+			<High>129.39</High>
+			<Low>127.31</Low>
+			<Close>127.38</Close>
+			<Volume>4000200</Volume>
+			<Adj_Close>126.64</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-29</Date>
+			<Open>127.21</Open>
+			<High>129.53</High>
+			<Low>127.00</Low>
+			<Close>128.77</Close>
+			<Volume>3484900</Volume>
+			<Adj_Close>128.02</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-26</Date>
+			<Open>127.19</Open>
+			<High>129.00</High>
+			<Low>126.96</Low>
+			<Close>128.69</Close>
+			<Volume>2524100</Volume>
+			<Adj_Close>127.94</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-25</Date>
+			<Open>128.31</Open>
+			<High>128.49</High>
+			<Low>127.01</Low>
+			<Close>127.14</Close>
+			<Volume>2913100</Volume>
+			<Adj_Close>126.40</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-24</Date>
+			<Open>127.46</Open>
+			<High>128.80</High>
+			<Low>127.23</Low>
+			<Close>128.58</Close>
+			<Volume>2891400</Volume>
+			<Adj_Close>127.83</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-23</Date>
+			<Open>128.28</Open>
+			<High>128.54</High>
+			<Low>127.03</Low>
+			<Close>127.38</Close>
+			<Volume>2963100</Volume>
+			<Adj_Close>126.64</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-22</Date>
+			<Open>129.37</Open>
+			<High>129.87</High>
+			<Low>128.46</Low>
+			<Close>128.61</Close>
+			<Volume>2890300</Volume>
+			<Adj_Close>127.86</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-19</Date>
+			<Open>129.27</Open>
+			<High>129.70</High>
+			<Low>128.92</Low>
+			<Close>129.35</Close>
+			<Volume>5635700</Volume>
+			<Adj_Close>128.60</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-18</Date>
+			<Open>128.00</Open>
+			<High>128.90</High>
+			<Low>128.00</Low>
+			<Close>128.58</Close>
+			<Volume>2721800</Volume>
+			<Adj_Close>127.83</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-17</Date>
+			<Open>128.25</Open>
+			<High>128.38</High>
+			<Low>127.20</Low>
+			<Close>127.76</Close>
+			<Volume>3135300</Volume>
+			<Adj_Close>127.02</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-16</Date>
+			<Open>126.20</Open>
+			<High>127.70</High>
+			<Low>125.72</Low>
+			<Close>127.32</Close>
+			<Volume>3377500</Volume>
+			<Adj_Close>126.58</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-15</Date>
+			<Open>126.92</Open>
+			<High>126.95</High>
+			<Low>125.69</Low>
+			<Close>126.31</Close>
+			<Volume>3261700</Volume>
+			<Adj_Close>125.58</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-12</Date>
+			<Open>127.49</Open>
+			<High>127.56</High>
+			<Low>126.61</Low>
+			<Close>126.95</Close>
+			<Volume>3107300</Volume>
+			<Adj_Close>126.21</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-11</Date>
+			<Open>127.82</Open>
+			<High>127.99</High>
+			<Low>127.20</Low>
+			<Close>127.64</Close>
+			<Volume>1988200</Volume>
+			<Adj_Close>126.90</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-10</Date>
+			<Open>128.47</Open>
+			<High>128.47</High>
+			<Low>127.48</Low>
+			<Close>128.22</Close>
+			<Volume>3068200</Volume>
+			<Adj_Close>127.48</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-09</Date>
+			<Open>127.81</Open>
+			<High>128.68</High>
+			<Low>127.62</Low>
+			<Close>128.21</Close>
+			<Volume>4866400</Volume>
+			<Adj_Close>127.47</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-08</Date>
+			<Open>125.90</Open>
+			<High>128.25</High>
+			<Low>125.90</Low>
+			<Close>127.98</Close>
+			<Volume>6103500</Volume>
+			<Adj_Close>127.24</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-05</Date>
+			<Open>125.43</Open>
+			<High>125.55</High>
+			<Low>124.10</Low>
+			<Close>124.69</Close>
+			<Volume>4913800</Volume>
+			<Adj_Close>123.97</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-04</Date>
+			<Open>126.38</Open>
+			<High>126.75</High>
+			<Low>125.26</Low>
+			<Close>125.46</Close>
+			<Volume>2975300</Volume>
+			<Adj_Close>124.73</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-03</Date>
+			<Open>125.46</Open>
+			<High>126.24</High>
+			<Low>125.20</Low>
+			<Close>125.94</Close>
+			<Volume>3966500</Volume>
+			<Adj_Close>125.21</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-09-02</Date>
+			<Open>125.62</Open>
+			<High>126.26</High>
+			<Low>124.57</Low>
+			<Close>125.48</Close>
+			<Volume>4576000</Volume>
+			<Adj_Close>124.75</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-29</Date>
+			<Open>127.35</Open>
+			<High>127.35</High>
+			<Low>126.05</Low>
+			<Close>126.80</Close>
+			<Volume>3032700</Volume>
+			<Adj_Close>126.06</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-28</Date>
+			<Open>127.34</Open>
+			<High>127.75</High>
+			<Low>126.72</Low>
+			<Close>127.11</Close>
+			<Volume>3070300</Volume>
+			<Adj_Close>126.37</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-27</Date>
+			<Open>128.77</Open>
+			<High>128.99</High>
+			<Low>127.95</Low>
+			<Close>128.20</Close>
+			<Volume>3075200</Volume>
+			<Adj_Close>127.46</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-26</Date>
+			<Open>128.69</Open>
+			<High>129.13</High>
+			<Low>128.31</Low>
+			<Close>128.60</Close>
+			<Volume>2329000</Volume>
+			<Adj_Close>127.85</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-25</Date>
+			<Open>128.08</Open>
+			<High>128.49</High>
+			<Low>127.78</Low>
+			<Close>128.33</Close>
+			<Volume>2307100</Volume>
+			<Adj_Close>127.59</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-22</Date>
+			<Open>127.33</Open>
+			<High>127.80</High>
+			<Low>126.96</Low>
+			<Close>127.46</Close>
+			<Volume>2394700</Volume>
+			<Adj_Close>126.72</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-21</Date>
+			<Open>127.54</Open>
+			<High>127.78</High>
+			<Low>126.74</Low>
+			<Close>127.50</Close>
+			<Volume>2522300</Volume>
+			<Adj_Close>126.76</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-20</Date>
+			<Open>125.89</Open>
+			<High>127.71</High>
+			<Low>125.58</Low>
+			<Close>127.35</Close>
+			<Volume>4331300</Volume>
+			<Adj_Close>126.61</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-19</Date>
+			<Open>125.22</Open>
+			<High>125.79</High>
+			<Low>125.11</Low>
+			<Close>125.58</Close>
+			<Volume>2988300</Volume>
+			<Adj_Close>124.85</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-18</Date>
+			<Open>123.58</Open>
+			<High>125.24</High>
+			<Low>123.57</Low>
+			<Close>124.98</Close>
+			<Volume>4196900</Volume>
+			<Adj_Close>124.25</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-15</Date>
+			<Open>124.50</Open>
+			<High>124.50</High>
+			<Low>122.15</Low>
+			<Close>123.16</Close>
+			<Volume>4570000</Volume>
+			<Adj_Close>122.45</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-14</Date>
+			<Open>122.20</Open>
+			<High>124.69</High>
+			<Low>122.16</Low>
+			<Close>124.11</Close>
+			<Volume>4825100</Volume>
+			<Adj_Close>123.39</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-13</Date>
+			<Open>120.67</Open>
+			<High>122.23</High>
+			<Low>120.63</Low>
+			<Close>121.98</Close>
+			<Volume>2645800</Volume>
+			<Adj_Close>121.27</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-12</Date>
+			<Open>120.51</Open>
+			<High>120.94</High>
+			<Low>120.01</Low>
+			<Close>120.47</Close>
+			<Volume>2303500</Volume>
+			<Adj_Close>119.77</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-11</Date>
+			<Open>121.15</Open>
+			<High>121.76</High>
+			<Low>120.75</Low>
+			<Close>120.80</Close>
+			<Volume>2807900</Volume>
+			<Adj_Close>120.10</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-08</Date>
+			<Open>119.80</Open>
+			<High>120.65</High>
+			<Low>119.28</Low>
+			<Close>120.63</Close>
+			<Volume>4348900</Volume>
+			<Adj_Close>119.93</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-07</Date>
+			<Open>119.00</Open>
+			<High>120.22</High>
+			<Low>118.87</Low>
+			<Close>119.84</Close>
+			<Volume>4641800</Volume>
+			<Adj_Close>119.14</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-06</Date>
+			<Open>119.32</Open>
+			<High>119.36</High>
+			<Low>117.87</Low>
+			<Close>118.34</Close>
+			<Volume>6239700</Volume>
+			<Adj_Close>117.65</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-05</Date>
+			<Open>119.67</Open>
+			<High>121.98</High>
+			<Low>119.66</Low>
+			<Close>121.27</Close>
+			<Volume>6097900</Volume>
+			<Adj_Close>119.84</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-04</Date>
+			<Open>120.80</Open>
+			<High>121.19</High>
+			<Low>119.77</Low>
+			<Close>119.93</Close>
+			<Volume>4671100</Volume>
+			<Adj_Close>118.52</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-08-01</Date>
+			<Open>120.45</Open>
+			<High>121.71</High>
+			<Low>119.64</Low>
+			<Close>120.38</Close>
+			<Volume>5852700</Volume>
+			<Adj_Close>118.96</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-31</Date>
+			<Open>121.47</Open>
+			<High>122.05</High>
+			<Low>120.41</Low>
+			<Close>120.48</Close>
+			<Volume>5588800</Volume>
+			<Adj_Close>119.06</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-30</Date>
+			<Open>123.20</Open>
+			<High>123.80</High>
+			<Low>121.76</Low>
+			<Close>122.29</Close>
+			<Volume>4042900</Volume>
+			<Adj_Close>120.85</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-29</Date>
+			<Open>123.31</Open>
+			<High>123.63</High>
+			<Low>122.20</Low>
+			<Close>122.32</Close>
+			<Volume>4101900</Volume>
+			<Adj_Close>120.88</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-28</Date>
+			<Open>123.44</Open>
+			<High>124.56</High>
+			<Low>122.16</Low>
+			<Close>123.06</Close>
+			<Volume>4982400</Volume>
+			<Adj_Close>121.61</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-25</Date>
+			<Open>124.48</Open>
+			<High>124.53</High>
+			<Low>122.41</Low>
+			<Close>123.20</Close>
+			<Volume>6121400</Volume>
+			<Adj_Close>121.75</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-24</Date>
+			<Open>125.92</Open>
+			<High>126.05</High>
+			<Low>124.00</Low>
+			<Close>124.40</Close>
+			<Volume>10307200</Volume>
+			<Adj_Close>122.93</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-23</Date>
+			<Open>127.79</Open>
+			<High>128.40</High>
+			<Low>126.02</Low>
+			<Close>126.71</Close>
+			<Volume>12326300</Volume>
+			<Adj_Close>125.22</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-22</Date>
+			<Open>128.99</Open>
+			<High>130.01</High>
+			<Low>128.58</Low>
+			<Close>129.74</Close>
+			<Volume>5102200</Volume>
+			<Adj_Close>128.21</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-21</Date>
+			<Open>127.30</Open>
+			<High>128.42</High>
+			<Low>126.77</Low>
+			<Close>128.30</Close>
+			<Volume>2738700</Volume>
+			<Adj_Close>126.79</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-18</Date>
+			<Open>126.38</Open>
+			<High>127.82</High>
+			<Low>126.25</Low>
+			<Close>127.64</Close>
+			<Volume>3103300</Volume>
+			<Adj_Close>126.14</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-17</Date>
+			<Open>127.21</Open>
+			<High>128.18</High>
+			<Low>125.79</Low>
+			<Close>125.88</Close>
+			<Volume>5292900</Volume>
+			<Adj_Close>124.40</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-16</Date>
+			<Open>129.56</Open>
+			<High>129.56</High>
+			<Low>127.14</Low>
+			<Close>127.42</Close>
+			<Volume>5260800</Volume>
+			<Adj_Close>125.92</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-15</Date>
+			<Open>130.31</Open>
+			<High>130.31</High>
+			<Low>128.34</Low>
+			<Close>129.10</Close>
+			<Volume>4916100</Volume>
+			<Adj_Close>127.58</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-14</Date>
+			<Open>128.91</Open>
+			<High>130.58</High>
+			<Low>128.76</Low>
+			<Close>129.52</Close>
+			<Volume>5267500</Volume>
+			<Adj_Close>127.99</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-11</Date>
+			<Open>127.18</Open>
+			<High>128.24</High>
+			<Low>126.36</Low>
+			<Close>128.09</Close>
+			<Volume>3193100</Volume>
+			<Adj_Close>126.58</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-10</Date>
+			<Open>125.54</Open>
+			<High>127.63</High>
+			<Low>125.12</Low>
+			<Close>126.79</Close>
+			<Volume>3936900</Volume>
+			<Adj_Close>125.30</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-09</Date>
+			<Open>128.31</Open>
+			<High>128.32</High>
+			<Low>125.91</Low>
+			<Close>126.79</Close>
+			<Volume>8023900</Volume>
+			<Adj_Close>125.30</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-08</Date>
+			<Open>128.89</Open>
+			<High>128.97</High>
+			<Low>125.92</Low>
+			<Close>126.79</Close>
+			<Volume>5724300</Volume>
+			<Adj_Close>125.30</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-07</Date>
+			<Open>128.10</Open>
+			<High>129.50</High>
+			<Low>127.77</Low>
+			<Close>129.09</Close>
+			<Volume>3157000</Volume>
+			<Adj_Close>127.57</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-03</Date>
+			<Open>127.99</Open>
+			<High>128.62</High>
+			<Low>127.70</Low>
+			<Close>128.51</Close>
+			<Volume>1997500</Volume>
+			<Adj_Close>127.00</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-02</Date>
+			<Open>128.15</Open>
+			<High>128.50</High>
+			<Low>127.34</Low>
+			<Close>127.62</Close>
+			<Volume>2859000</Volume>
+			<Adj_Close>126.12</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-07-01</Date>
+			<Open>127.66</Open>
+			<High>128.33</High>
+			<Low>127.36</Low>
+			<Close>128.15</Close>
+			<Volume>3772500</Volume>
+			<Adj_Close>126.64</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-30</Date>
+			<Open>127.91</Open>
+			<High>127.91</High>
+			<Low>126.20</Low>
+			<Close>127.23</Close>
+			<Volume>5712900</Volume>
+			<Adj_Close>125.73</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-27</Date>
+			<Open>128.07</Open>
+			<High>128.78</High>
+			<Low>127.56</Low>
+			<Close>128.54</Close>
+			<Volume>3687900</Volume>
+			<Adj_Close>127.03</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-26</Date>
+			<Open>127.41</Open>
+			<High>128.44</High>
+			<Low>126.36</Low>
+			<Close>128.02</Close>
+			<Volume>3929100</Volume>
+			<Adj_Close>126.51</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-25</Date>
+			<Open>129.04</Open>
+			<High>129.14</High>
+			<Low>126.28</Low>
+			<Close>127.06</Close>
+			<Volume>7929700</Volume>
+			<Adj_Close>125.56</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-24</Date>
+			<Open>130.50</Open>
+			<High>131.24</High>
+			<Low>129.00</Low>
+			<Close>129.15</Close>
+			<Volume>4319800</Volume>
+			<Adj_Close>127.63</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-23</Date>
+			<Open>132.32</Open>
+			<High>132.53</High>
+			<Low>130.65</Low>
+			<Close>130.85</Close>
+			<Volume>4433000</Volume>
+			<Adj_Close>129.31</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-20</Date>
+			<Open>133.48</Open>
+			<High>134.08</High>
+			<Low>132.09</Low>
+			<Close>132.10</Close>
+			<Volume>8083500</Volume>
+			<Adj_Close>130.54</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-19</Date>
+			<Open>132.48</Open>
+			<High>132.93</High>
+			<Low>131.80</Low>
+			<Close>132.82</Close>
+			<Volume>2794900</Volume>
+			<Adj_Close>131.25</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-18</Date>
+			<Open>132.61</Open>
+			<High>132.67</High>
+			<Low>131.03</Low>
+			<Close>132.48</Close>
+			<Volume>2859000</Volume>
+			<Adj_Close>130.92</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-17</Date>
+			<Open>132.10</Open>
+			<High>133.05</High>
+			<Low>131.72</Low>
+			<Close>132.45</Close>
+			<Volume>2223200</Volume>
+			<Adj_Close>130.89</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-16</Date>
+			<Open>132.20</Open>
+			<High>133.13</High>
+			<Low>131.65</Low>
+			<Close>132.54</Close>
+			<Volume>2163800</Volume>
+			<Adj_Close>130.98</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-13</Date>
+			<Open>132.53</Open>
+			<High>132.95</High>
+			<Low>131.55</Low>
+			<Close>132.29</Close>
+			<Volume>2376600</Volume>
+			<Adj_Close>130.73</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-12</Date>
+			<Open>133.86</Open>
+			<High>134.17</High>
+			<Low>131.64</Low>
+			<Close>132.19</Close>
+			<Volume>3826100</Volume>
+			<Adj_Close>130.63</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-11</Date>
+			<Open>135.25</Open>
+			<High>135.53</High>
+			<Low>133.82</Low>
+			<Close>134.10</Close>
+			<Volume>5558000</Volume>
+			<Adj_Close>132.52</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-10</Date>
+			<Open>137.59</Open>
+			<High>137.75</High>
+			<Low>136.29</Low>
+			<Close>137.25</Close>
+			<Volume>2370200</Volume>
+			<Adj_Close>135.63</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-09</Date>
+			<Open>138.25</Open>
+			<High>138.39</High>
+			<Low>137.50</Low>
+			<Close>137.96</Close>
+			<Volume>2585000</Volume>
+			<Adj_Close>136.33</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-06</Date>
+			<Open>137.39</Open>
+			<High>138.25</High>
+			<Low>137.12</Low>
+			<Close>138.25</Close>
+			<Volume>2710900</Volume>
+			<Adj_Close>136.62</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-05</Date>
+			<Open>135.65</Open>
+			<High>137.38</High>
+			<Low>135.65</Low>
+			<Close>136.82</Close>
+			<Volume>3489900</Volume>
+			<Adj_Close>135.21</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-04</Date>
+			<Open>135.54</Open>
+			<High>135.55</High>
+			<Low>134.59</Low>
+			<Close>135.33</Close>
+			<Volume>2601900</Volume>
+			<Adj_Close>133.74</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-03</Date>
+			<Open>135.80</Open>
+			<High>136.53</High>
+			<Low>135.62</Low>
+			<Close>135.88</Close>
+			<Volume>2468800</Volume>
+			<Adj_Close>134.28</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-06-02</Date>
+			<Open>135.50</Open>
+			<High>136.03</High>
+			<Low>134.77</Low>
+			<Close>135.90</Close>
+			<Volume>2629900</Volume>
+			<Adj_Close>134.30</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-30</Date>
+			<Open>134.67</Open>
+			<High>135.44</High>
+			<Low>134.04</Low>
+			<Close>135.25</Close>
+			<Volume>2760300</Volume>
+			<Adj_Close>133.66</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-29</Date>
+			<Open>134.71</Open>
+			<High>135.20</High>
+			<Low>134.43</Low>
+			<Close>135.14</Close>
+			<Volume>2234100</Volume>
+			<Adj_Close>133.55</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-28</Date>
+			<Open>134.17</Open>
+			<High>135.15</High>
+			<Low>134.17</Low>
+			<Close>134.33</Close>
+			<Volume>2609400</Volume>
+			<Adj_Close>132.75</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-27</Date>
+			<Open>133.09</Open>
+			<High>134.21</High>
+			<Low>132.87</Low>
+			<Close>134.17</Close>
+			<Volume>3085500</Volume>
+			<Adj_Close>132.59</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-23</Date>
+			<Open>132.00</Open>
+			<High>132.58</High>
+			<Low>131.93</Low>
+			<Close>132.41</Close>
+			<Volume>1956200</Volume>
+			<Adj_Close>130.85</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-22</Date>
+			<Open>131.66</Open>
+			<High>132.48</High>
+			<Low>131.27</Low>
+			<Close>131.84</Close>
+			<Volume>2370700</Volume>
+			<Adj_Close>130.29</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-21</Date>
+			<Open>130.43</Open>
+			<High>131.43</High>
+			<Low>130.04</Low>
+			<Close>130.96</Close>
+			<Volume>2476100</Volume>
+			<Adj_Close>129.42</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-20</Date>
+			<Open>130.94</Open>
+			<High>131.60</High>
+			<Low>129.07</Low>
+			<Close>129.58</Close>
+			<Volume>2995800</Volume>
+			<Adj_Close>128.05</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-19</Date>
+			<Open>130.42</Open>
+			<High>132.07</High>
+			<Low>130.35</Low>
+			<Close>131.35</Close>
+			<Volume>2103100</Volume>
+			<Adj_Close>129.80</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-16</Date>
+			<Open>131.31</Open>
+			<High>131.71</High>
+			<Low>130.03</Low>
+			<Close>130.81</Close>
+			<Volume>2963300</Volume>
+			<Adj_Close>129.27</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-15</Date>
+			<Open>132.70</Open>
+			<High>132.86</High>
+			<Low>130.56</Low>
+			<Close>131.21</Close>
+			<Volume>3596800</Volume>
+			<Adj_Close>129.66</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-14</Date>
+			<Open>133.80</Open>
+			<High>133.97</High>
+			<Low>132.69</Low>
+			<Close>132.99</Close>
+			<Volume>2883900</Volume>
+			<Adj_Close>131.42</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-13</Date>
+			<Open>133.01</Open>
+			<High>133.83</High>
+			<Low>132.86</Low>
+			<Close>133.45</Close>
+			<Volume>3132200</Volume>
+			<Adj_Close>131.88</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-12</Date>
+			<Open>131.82</Open>
+			<High>132.99</High>
+			<Low>131.64</Low>
+			<Close>132.60</Close>
+			<Volume>3288500</Volume>
+			<Adj_Close>131.04</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-09</Date>
+			<Open>130.26</Open>
+			<High>131.33</High>
+			<Low>129.88</Low>
+			<Close>131.10</Close>
+			<Volume>2543800</Volume>
+			<Adj_Close>129.55</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-08</Date>
+			<Open>130.17</Open>
+			<High>131.27</High>
+			<Low>130.17</Low>
+			<Close>130.57</Close>
+			<Volume>2988700</Volume>
+			<Adj_Close>129.03</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-07</Date>
+			<Open>130.77</Open>
+			<High>131.10</High>
+			<Low>129.20</Low>
+			<Close>130.35</Close>
+			<Volume>2900600</Volume>
+			<Adj_Close>128.81</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-06</Date>
+			<Open>131.75</Open>
+			<High>131.92</High>
+			<Low>130.70</Low>
+			<Close>130.83</Close>
+			<Volume>4032000</Volume>
+			<Adj_Close>128.57</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-05</Date>
+			<Open>129.00</Open>
+			<High>132.38</High>
+			<Low>128.95</Low>
+			<Close>131.96</Close>
+			<Volume>4026500</Volume>
+			<Adj_Close>129.68</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-02</Date>
+			<Open>128.70</Open>
+			<High>130.40</High>
+			<Low>128.61</Low>
+			<Close>129.94</Close>
+			<Volume>3762900</Volume>
+			<Adj_Close>127.69</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-05-01</Date>
+			<Open>128.74</Open>
+			<High>129.60</High>
+			<Low>128.27</Low>
+			<Close>128.46</Close>
+			<Volume>2804100</Volume>
+			<Adj_Close>126.24</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-30</Date>
+			<Open>128.05</Open>
+			<High>129.50</High>
+			<Low>127.80</Low>
+			<Close>129.02</Close>
+			<Volume>2773000</Volume>
+			<Adj_Close>126.79</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-29</Date>
+			<Open>127.20</Open>
+			<High>128.57</High>
+			<Low>126.53</Low>
+			<Close>128.37</Close>
+			<Volume>3344100</Volume>
+			<Adj_Close>126.15</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-28</Date>
+			<Open>128.20</Open>
+			<High>128.87</High>
+			<Low>125.80</Low>
+			<Close>127.04</Close>
+			<Volume>4354600</Volume>
+			<Adj_Close>124.84</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-25</Date>
+			<Open>129.84</Open>
+			<High>130.00</High>
+			<Low>128.37</Low>
+			<Close>128.66</Close>
+			<Volume>2978500</Volume>
+			<Adj_Close>126.43</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-24</Date>
+			<Open>130.41</Open>
+			<High>130.62</High>
+			<Low>128.43</Low>
+			<Close>129.86</Close>
+			<Volume>4177000</Volume>
+			<Adj_Close>127.61</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-23</Date>
+			<Open>130.67</Open>
+			<High>131.50</High>
+			<Low>129.33</Low>
+			<Close>130.63</Close>
+			<Volume>7121600</Volume>
+			<Adj_Close>128.37</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-22</Date>
+			<Open>128.25</Open>
+			<High>129.13</High>
+			<Low>127.48</Low>
+			<Close>127.55</Close>
+			<Volume>5015600</Volume>
+			<Adj_Close>125.34</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-21</Date>
+			<Open>128.05</Open>
+			<High>128.44</High>
+			<Low>127.37</Low>
+			<Close>127.82</Close>
+			<Volume>2368500</Volume>
+			<Adj_Close>125.61</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-17</Date>
+			<Open>126.44</Open>
+			<High>128.37</High>
+			<Low>125.83</Low>
+			<Close>127.92</Close>
+			<Volume>3449400</Volume>
+			<Adj_Close>125.71</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-16</Date>
+			<Open>125.00</Open>
+			<High>126.04</High>
+			<Low>124.73</Low>
+			<Close>126.04</Close>
+			<Volume>2826100</Volume>
+			<Adj_Close>123.86</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-15</Date>
+			<Open>123.35</Open>
+			<High>124.55</High>
+			<Low>122.13</Low>
+			<Close>124.27</Close>
+			<Volume>2746900</Volume>
+			<Adj_Close>122.12</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-14</Date>
+			<Open>123.08</Open>
+			<High>123.77</High>
+			<Low>122.18</Low>
+			<Close>123.25</Close>
+			<Volume>3086300</Volume>
+			<Adj_Close>121.12</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-11</Date>
+			<Open>123.05</Open>
+			<High>123.45</High>
+			<Low>121.92</Low>
+			<Close>122.07</Close>
+			<Volume>3854600</Volume>
+			<Adj_Close>119.96</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-10</Date>
+			<Open>126.82</Open>
+			<High>126.86</High>
+			<Low>123.64</Low>
+			<Close>123.64</Close>
+			<Volume>3956900</Volume>
+			<Adj_Close>121.50</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-09</Date>
+			<Open>124.99</Open>
+			<High>127.02</High>
+			<Low>124.05</Low>
+			<Close>126.88</Close>
+			<Volume>3689900</Volume>
+			<Adj_Close>124.69</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-08</Date>
+			<Open>125.28</Open>
+			<High>125.73</High>
+			<Low>124.06</Low>
+			<Close>124.15</Close>
+			<Volume>4122200</Volume>
+			<Adj_Close>122.00</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-07</Date>
+			<Open>127.19</Open>
+			<High>128.18</High>
+			<Low>124.95</Low>
+			<Close>125.59</Close>
+			<Volume>3753600</Volume>
+			<Adj_Close>123.42</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-04</Date>
+			<Open>129.33</Open>
+			<High>129.92</High>
+			<Low>127.23</Low>
+			<Close>127.38</Close>
+			<Volume>4156600</Volume>
+			<Adj_Close>125.18</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-03</Date>
+			<Open>129.17</Open>
+			<High>129.17</High>
+			<Low>128.28</Low>
+			<Close>128.78</Close>
+			<Volume>3303500</Volume>
+			<Adj_Close>126.55</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-02</Date>
+			<Open>128.63</Open>
+			<High>128.77</High>
+			<Low>127.40</Low>
+			<Close>128.31</Close>
+			<Volume>2935200</Volume>
+			<Adj_Close>126.09</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-04-01</Date>
+			<Open>126.24</Open>
+			<High>128.40</High>
+			<Low>126.17</Low>
+			<Close>128.21</Close>
+			<Volume>3952800</Volume>
+			<Adj_Close>125.99</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-31</Date>
+			<Open>125.36</Open>
+			<High>126.04</High>
+			<Low>124.80</Low>
+			<Close>125.49</Close>
+			<Volume>2962000</Volume>
+			<Adj_Close>123.32</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-28</Date>
+			<Open>123.78</Open>
+			<High>125.19</High>
+			<Low>123.52</Low>
+			<Close>124.46</Close>
+			<Volume>2863500</Volume>
+			<Adj_Close>122.31</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-27</Date>
+			<Open>123.01</Open>
+			<High>124.30</High>
+			<Low>121.80</Low>
+			<Close>123.21</Close>
+			<Volume>3106000</Volume>
+			<Adj_Close>121.08</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-26</Date>
+			<Open>124.61</Open>
+			<High>125.32</High>
+			<Low>123.32</Low>
+			<Close>123.53</Close>
+			<Volume>3091200</Volume>
+			<Adj_Close>121.39</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-25</Date>
+			<Open>124.46</Open>
+			<High>125.00</High>
+			<Low>123.56</Low>
+			<Close>124.02</Close>
+			<Volume>3225100</Volume>
+			<Adj_Close>121.87</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-24</Date>
+			<Open>123.53</Open>
+			<High>123.95</High>
+			<Low>122.08</Low>
+			<Close>123.42</Close>
+			<Volume>4472500</Volume>
+			<Adj_Close>121.28</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-21</Date>
+			<Open>124.06</Open>
+			<High>124.45</High>
+			<Low>122.50</Low>
+			<Close>122.58</Close>
+			<Volume>7973600</Volume>
+			<Adj_Close>120.46</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-20</Date>
+			<Open>122.59</Open>
+			<High>123.90</High>
+			<Low>121.38</Low>
+			<Close>123.73</Close>
+			<Volume>4601700</Volume>
+			<Adj_Close>121.59</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-19</Date>
+			<Open>124.32</Open>
+			<High>125.20</High>
+			<Low>121.37</Low>
+			<Close>122.24</Close>
+			<Volume>6673000</Volume>
+			<Adj_Close>120.13</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-18</Date>
+			<Open>125.59</Open>
+			<High>125.82</High>
+			<Low>123.66</Low>
+			<Close>124.04</Close>
+			<Volume>4151600</Volume>
+			<Adj_Close>121.89</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-17</Date>
+			<Open>123.97</Open>
+			<High>125.82</High>
+			<Low>123.92</Low>
+			<Close>125.42</Close>
+			<Volume>4380500</Volume>
+			<Adj_Close>123.25</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-14</Date>
+			<Open>122.12</Open>
+			<High>124.28</High>
+			<Low>121.95</Low>
+			<Close>123.11</Close>
+			<Volume>5698400</Volume>
+			<Adj_Close>120.98</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-13</Date>
+			<Open>124.65</Open>
+			<High>125.61</High>
+			<Low>121.63</Low>
+			<Close>121.89</Close>
+			<Volume>6071200</Volume>
+			<Adj_Close>119.78</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-12</Date>
+			<Open>125.00</Open>
+			<High>125.20</High>
+			<Low>123.81</Low>
+			<Close>124.43</Close>
+			<Volume>5040100</Volume>
+			<Adj_Close>122.28</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-11</Date>
+			<Open>127.03</Open>
+			<High>127.27</High>
+			<Low>125.62</Low>
+			<Close>125.67</Close>
+			<Volume>4190000</Volume>
+			<Adj_Close>123.50</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-10</Date>
+			<Open>126.51</Open>
+			<High>127.28</High>
+			<Low>124.76</Low>
+			<Close>126.89</Close>
+			<Volume>7039200</Volume>
+			<Adj_Close>124.69</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-07</Date>
+			<Open>129.75</Open>
+			<High>130.16</High>
+			<Low>128.07</Low>
+			<Close>128.54</Close>
+			<Volume>4297800</Volume>
+			<Adj_Close>126.32</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-06</Date>
+			<Open>129.01</Open>
+			<High>129.37</High>
+			<Low>128.03</Low>
+			<Close>128.86</Close>
+			<Volume>3595900</Volume>
+			<Adj_Close>126.63</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-05</Date>
+			<Open>130.40</Open>
+			<High>130.80</High>
+			<Low>128.69</Low>
+			<Close>128.79</Close>
+			<Volume>4095200</Volume>
+			<Adj_Close>126.56</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-04</Date>
+			<Open>129.38</Open>
+			<High>131.00</High>
+			<Low>129.33</Low>
+			<Close>130.23</Close>
+			<Volume>5422800</Volume>
+			<Adj_Close>127.98</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-03-03</Date>
+			<Open>127.18</Open>
+			<High>128.44</High>
+			<Low>126.52</Low>
+			<Close>128.22</Close>
+			<Volume>4847100</Volume>
+			<Adj_Close>126.00</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-28</Date>
+			<Open>128.75</Open>
+			<High>129.95</High>
+			<Low>128.06</Low>
+			<Close>128.92</Close>
+			<Volume>4361400</Volume>
+			<Adj_Close>126.69</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-27</Date>
+			<Open>126.47</Open>
+			<High>128.56</High>
+			<Low>126.26</Low>
+			<Close>128.56</Close>
+			<Volume>4649700</Volume>
+			<Adj_Close>126.34</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-26</Date>
+			<Open>127.24</Open>
+			<High>127.94</High>
+			<Low>126.36</Low>
+			<Close>126.61</Close>
+			<Volume>4803600</Volume>
+			<Adj_Close>124.42</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-25</Date>
+			<Open>129.30</Open>
+			<High>129.75</High>
+			<Low>126.21</Low>
+			<Close>126.78</Close>
+			<Volume>7308800</Volume>
+			<Adj_Close>124.59</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-24</Date>
+			<Open>128.38</Open>
+			<High>130.80</High>
+			<Low>128.36</Low>
+			<Close>129.59</Close>
+			<Volume>4635700</Volume>
+			<Adj_Close>127.35</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-21</Date>
+			<Open>129.80</Open>
+			<High>129.80</High>
+			<Low>128.11</Low>
+			<Close>128.28</Close>
+			<Volume>5164000</Volume>
+			<Adj_Close>126.06</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-20</Date>
+			<Open>128.48</Open>
+			<High>129.99</High>
+			<Low>127.51</Low>
+			<Close>129.56</Close>
+			<Volume>4466400</Volume>
+			<Adj_Close>127.32</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-19</Date>
+			<Open>130.11</Open>
+			<High>130.50</High>
+			<Low>128.37</Low>
+			<Close>128.39</Close>
+			<Volume>5146600</Volume>
+			<Adj_Close>126.17</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-18</Date>
+			<Open>130.13</Open>
+			<High>130.94</High>
+			<Low>129.60</Low>
+			<Close>130.63</Close>
+			<Volume>4645300</Volume>
+			<Adj_Close>128.37</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-14</Date>
+			<Open>129.09</Open>
+			<High>130.41</High>
+			<Low>128.02</Low>
+			<Close>130.16</Close>
+			<Volume>4807700</Volume>
+			<Adj_Close>127.91</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-13</Date>
+			<Open>127.06</Open>
+			<High>129.94</High>
+			<Low>127.06</Low>
+			<Close>129.50</Close>
+			<Volume>4203400</Volume>
+			<Adj_Close>127.26</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-12</Date>
+			<Open>130.29</Open>
+			<High>130.55</High>
+			<Low>128.00</Low>
+			<Close>128.13</Close>
+			<Volume>5798800</Volume>
+			<Adj_Close>125.91</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-11</Date>
+			<Open>127.65</Open>
+			<High>130.69</High>
+			<Low>127.46</Low>
+			<Close>130.16</Close>
+			<Volume>7874000</Volume>
+			<Adj_Close>127.19</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-10</Date>
+			<Open>128.96</Open>
+			<High>128.97</High>
+			<Low>126.35</Low>
+			<Close>127.16</Close>
+			<Volume>8173500</Volume>
+			<Adj_Close>124.26</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-07</Date>
+			<Open>123.75</Open>
+			<High>127.21</High>
+			<Low>123.65</Low>
+			<Close>127.02</Close>
+			<Volume>8906300</Volume>
+			<Adj_Close>124.12</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-06</Date>
+			<Open>121.79</Open>
+			<High>122.72</High>
+			<Low>121.51</Low>
+			<Close>122.67</Close>
+			<Volume>6738800</Volume>
+			<Adj_Close>119.87</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-05</Date>
+			<Open>121.00</Open>
+			<High>121.94</High>
+			<Low>118.77</Low>
+			<Close>121.40</Close>
+			<Volume>9689100</Volume>
+			<Adj_Close>118.63</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-04</Date>
+			<Open>123.07</Open>
+			<High>123.80</High>
+			<Low>120.53</Low>
+			<Close>122.04</Close>
+			<Volume>9304100</Volume>
+			<Adj_Close>119.26</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-02-03</Date>
+			<Open>124.24</Open>
+			<High>126.52</High>
+			<Low>122.75</Low>
+			<Close>123.08</Close>
+			<Volume>9309600</Volume>
+			<Adj_Close>120.27</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-31</Date>
+			<Open>124.46</Open>
+			<High>126.87</High>
+			<Low>123.08</Low>
+			<Close>125.26</Close>
+			<Volume>9732700</Volume>
+			<Adj_Close>122.40</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-30</Date>
+			<Open>131.70</Open>
+			<High>131.70</High>
+			<Low>125.20</Low>
+			<Close>126.53</Close>
+			<Volume>10406200</Volume>
+			<Adj_Close>123.64</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-29</Date>
+			<Open>131.70</Open>
+			<High>131.76</High>
+			<Low>128.07</Low>
+			<Close>129.78</Close>
+			<Volume>15993400</Volume>
+			<Adj_Close>126.82</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-28</Date>
+			<Open>137.61</Open>
+			<High>138.09</High>
+			<Low>136.44</Low>
+			<Close>137.09</Close>
+			<Volume>4606200</Volume>
+			<Adj_Close>133.96</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-27</Date>
+			<Open>136.70</Open>
+			<High>138.46</High>
+			<Low>135.65</Low>
+			<Close>137.36</Close>
+			<Volume>5057800</Volume>
+			<Adj_Close>134.23</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-24</Date>
+			<Open>140.40</Open>
+			<High>140.47</High>
+			<Low>136.32</Low>
+			<Close>136.65</Close>
+			<Volume>5856800</Volume>
+			<Adj_Close>133.53</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-23</Date>
+			<Open>143.10</Open>
+			<High>143.89</High>
+			<Low>141.10</Low>
+			<Close>141.31</Close>
+			<Volume>4491400</Volume>
+			<Adj_Close>138.09</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-22</Date>
+			<Open>142.31</Open>
+			<High>144.57</High>
+			<Low>141.87</Low>
+			<Close>144.37</Close>
+			<Volume>4388700</Volume>
+			<Adj_Close>141.08</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-21</Date>
+			<Open>141.46</Open>
+			<High>142.46</High>
+			<Low>140.81</Low>
+			<Close>141.67</Close>
+			<Volume>3240600</Volume>
+			<Adj_Close>138.44</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-17</Date>
+			<Open>140.08</Open>
+			<High>141.00</High>
+			<Low>139.75</Low>
+			<Close>140.46</Close>
+			<Volume>3382700</Volume>
+			<Adj_Close>137.26</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-16</Date>
+			<Open>140.33</Open>
+			<High>141.45</High>
+			<Low>140.07</Low>
+			<Close>140.21</Close>
+			<Volume>3062900</Volume>
+			<Adj_Close>137.01</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-15</Date>
+			<Open>140.30</Open>
+			<High>141.08</High>
+			<Low>140.14</Low>
+			<Close>140.62</Close>
+			<Volume>3030800</Volume>
+			<Adj_Close>137.41</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-14</Date>
+			<Open>140.85</Open>
+			<High>141.70</High>
+			<Low>137.80</Low>
+			<Close>140.01</Close>
+			<Volume>8441600</Volume>
+			<Adj_Close>136.82</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-13</Date>
+			<Open>141.55</Open>
+			<High>142.14</High>
+			<Low>140.38</Low>
+			<Close>140.70</Close>
+			<Volume>4462400</Volume>
+			<Adj_Close>137.49</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-10</Date>
+			<Open>142.79</Open>
+			<High>142.80</High>
+			<Low>140.90</Low>
+			<Close>141.90</Close>
+			<Volume>4549500</Volume>
+			<Adj_Close>138.66</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-09</Date>
+			<Open>141.51</Open>
+			<High>142.52</High>
+			<Low>140.54</Low>
+			<Close>142.13</Close>
+			<Volume>4052500</Volume>
+			<Adj_Close>138.89</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-08</Date>
+			<Open>140.69</Open>
+			<High>141.40</High>
+			<Low>139.36</Low>
+			<Close>140.82</Close>
+			<Volume>4236100</Volume>
+			<Adj_Close>137.61</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-07</Date>
+			<Open>138.58</Open>
+			<High>141.10</High>
+			<Low>138.50</Low>
+			<Close>140.51</Close>
+			<Volume>4238500</Volume>
+			<Adj_Close>137.30</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-06</Date>
+			<Open>139.40</Open>
+			<High>139.76</High>
+			<Low>137.80</Low>
+			<Close>138.41</Close>
+			<Volume>4196500</Volume>
+			<Adj_Close>135.25</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-03</Date>
+			<Open>137.06</Open>
+			<High>138.50</High>
+			<Low>137.05</Low>
+			<Close>137.62</Close>
+			<Volume>3177400</Volume>
+			<Adj_Close>134.48</Adj_Close>
+		</quote>
+		<quote Symbol="BA">
+			<Date>2014-01-02</Date>
+			<Open>136.01</Open>
+			<High>137.25</High>
+			<Low>135.51</Low>
+			<Close>136.67</Close>
+			<Volume>3366700</Volume>
+			<Adj_Close>133.55</Adj_Close>
+		</quote>
+	</results>
+</query><!-- total: 685 -->
+<!-- engine3.yql.bf1.yahoo.com -->

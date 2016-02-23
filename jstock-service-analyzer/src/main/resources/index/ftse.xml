@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+	<code>GDAXI</code>
+	<name>DAX</name>
+	<country>GERMANY</country>
+	<opening>09:00:00</opening>
+	<closing>17:30:00</closing>
+	<symbols>
+		<symbol>
+			<code>Símbolo</code>
+			<name>Nombre</name>
+		</symbol>
+		<symbol>
+			<code>A2A.MI</code>
+			<name>A2A S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>AGL.MI</code>
+			<name>Autogrill S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>ATL.MI</code>
+			<name>Atlantia SpA</name>
+		</symbol>
+		<symbol>
+			<code>AZM.MI</code>
+			<name>Azimut Holding Spa</name>
+		</symbol>
+		<symbol>
+			<code>BMPS.MI</code>
+			<name>Banca Monte dei Paschi di Siena S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>BP.MI</code>
+			<name>Banco Popolare Societa Cooperativa Scarl</name>
+		</symbol>
+		<symbol>
+			<code>BPE.MI</code>
+			<name>Banca popolare dell'Emilia Romagna, Società cooperativa. </name>
+		</symbol>
+		<symbol>
+			<code>BZU.MI</code>
+			<name>Buzzi Unicem SpA</name>
+		</symbol>
+		<symbol>
+			<code>CNHI.MI</code>
+			<name>CNH Industrial N.V.</name>
+		</symbol>
+		<symbol>
+			<code>CPR.MI</code>
+			<name>Davide Campari - Milano SpA</name>
+		</symbol>
+		<symbol>
+			<code>EGPW.MI</code>
+			<name>Enel Green Power S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>ENEL.MI</code>
+			<name>Enel SpA</name>
+		</symbol>
+		<symbol>
+			<code>ENI.MI</code>
+			<name>Eni SpA</name>
+		</symbol>
+		<symbol>
+			<code>EXO.MI</code>
+			<name>Exor S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>FCA.MI</code>
+			<name>Fiat Chrysler Automobiles N.V.</name>
+		</symbol>
+		<symbol>
+			<code>FNC.MI</code>
+			<name>Finmeccanica SpA</name>
+		</symbol>
+		<symbol>
+			<code>G.MI</code>
+			<name>Assicurazioni Generali S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>GTK.MI</code>
+			<name>GTECH S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>ISP.MI</code>
+			<name>Intesa Sanpaolo S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>LUX.MI</code>
+			<name>Luxottica Group SpA</name>
+		</symbol>
+		<symbol>
+			<code>MB.MI</code>
+			<name>Mediobanca Banca di Credito Finanziario S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>MED.MI</code>
+			<name>Mediolanum S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>MONC.MI</code>
+			<name>MONCLER</name>
+		</symbol>
+		<symbol>
+			<code>MS.MI</code>
+			<name>Mediaset SpA</name>
+		</symbol>
+		<symbol>
+			<code>PC.MI</code>
+			<name>Pirelli &amp; C. SpA</name>
+		</symbol>
+		<symbol>
+			<code>PMI.MI</code>
+			<name>Banca Popolare di Milano Scarl</name>
+		</symbol>
+		<symbol>
+			<code>PRY.MI</code>
+			<name>Prysmian S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>SFER.MI</code>
+			<name>Salvatore Ferragamo SpA</name>
+		</symbol>
+		<symbol>
+			<code>SPM.MI</code>
+			<name>Saipem SpA</name>
+		</symbol>
+		<symbol>
+			<code>SRG.MI</code>
+			<name>Snam S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>STM.MI</code>
+			<name>STMicroelectronics NV</name>
+		</symbol>
+		<symbol>
+			<code>TEN.MI</code>
+			<name>Tenaris SA</name>
+		</symbol>
+		<symbol>
+			<code>TIT.MI</code>
+			<name>Telecom Italia S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>TOD.MI</code>
+			<name>Tod's SpA</name>
+		</symbol>
+		<symbol>
+			<code>TRN.MI</code>
+			<name>TERNA - Rete Elettrica Nazionale Società per Azioni </name>
+		</symbol>
+		<symbol>
+			<code>UBI.MI</code>
+			<name>Unione di Banche Italiane Scpa</name>
+		</symbol>
+		<symbol>
+			<code>UCG.MI</code>
+			<name>UniCredit S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>US.MI</code>
+			<name>UnipolSai Assicurazioni S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>WDF.MI</code>
+			<name>World Duty Free S.p.A.</name>
+		</symbol>
+		<symbol>
+			<code>YOOX.MI</code>
+			<name>YOOX S.p.A.</name>
+		</symbol>
+	</symbols>
+</index>
+

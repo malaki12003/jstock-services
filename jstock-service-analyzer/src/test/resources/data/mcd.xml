@@ -1,0 +1,2065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:yahoo="http://www.yahooapis.com/v1/base.rng"
+	yahoo:count="226" yahoo:created="2014-11-22T09:12:33Z" yahoo:lang="es-ES">
+	<diagnostics>
+		<url execution-start-time="0" execution-stop-time="1"
+			execution-time="1"><![CDATA[http://www.datatables.org/yahoo/finance/yahoo.finance.historicaldata.xml]]></url>
+		<publiclyCallable>true</publiclyCallable>
+		<cache execution-start-time="5" execution-stop-time="5"
+			execution-time="0" method="GET" type="MEMCACHED"><![CDATA[f02acb2ac42d41c3df42fd0b87e6d9b6]]></cache>
+		<url execution-start-time="5" execution-stop-time="21"
+			execution-time="16"><![CDATA[http://ichart.finance.yahoo.com/table.csv?g=d&f=2014&e=22&c=2014&b=1&a=0&d=10&s=MCD]]></url>
+		<query execution-start-time="5" execution-stop-time="23"
+			execution-time="18"
+			params="{url=[http://ichart.finance.yahoo.com/table.csv?g=d&amp;f=2014&amp;e=22&amp;c=2014&amp;b=1&amp;a=0&amp;d=10&amp;s=MCD]}"><![CDATA[select * from csv(0,1) where url=@url]]></query>
+		<cache execution-start-time="24" execution-stop-time="24"
+			execution-time="0" method="GET" type="MEMCACHED"><![CDATA[d225741f9af1bc0ef529d34996b7785a]]></cache>
+		<url execution-start-time="25" execution-stop-time="47"
+			execution-time="22"><![CDATA[http://ichart.finance.yahoo.com/table.csv?g=d&f=2014&e=22&c=2014&b=1&a=0&d=10&s=MCD]]></url>
+		<query execution-start-time="24" execution-stop-time="50"
+			execution-time="26"
+			params="{columnsNames=[Date,Open,High,Low,Close,Volume,Adj_Close], url=[http://ichart.finance.yahoo.com/table.csv?g=d&amp;f=2014&amp;e=22&amp;c=2014&amp;b=1&amp;a=0&amp;d=10&amp;s=MCD]}"><![CDATA[select * from csv(2,0) where url=@url and columns=@columnsNames]]></query>
+		<javascript execution-start-time="3" execution-stop-time="672"
+			execution-time="668" instructions-used="19488392" table-name="yahoo.finance.historicaldata"></javascript>
+		<user-time>677</user-time>
+		<service-time>39</service-time>
+		<build-version>0.2.212</build-version>
+	</diagnostics>
+	<results>
+		<quote Symbol="MCD">
+			<Date>2014-11-21</Date>
+			<Open>97.47</Open>
+			<High>97.50</High>
+			<Low>96.42</Low>
+			<Close>96.68</Close>
+			<Volume>5483700</Volume>
+			<Adj_Close>96.68</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-20</Date>
+			<Open>96.54</Open>
+			<High>97.30</High>
+			<Low>96.50</Low>
+			<Close>96.64</Close>
+			<Volume>4551600</Volume>
+			<Adj_Close>96.64</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-19</Date>
+			<Open>96.74</Open>
+			<High>97.30</High>
+			<Low>96.43</Low>
+			<Close>96.56</Close>
+			<Volume>6631300</Volume>
+			<Adj_Close>96.56</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-18</Date>
+			<Open>96.04</Open>
+			<High>96.95</High>
+			<Low>95.37</Low>
+			<Close>96.41</Close>
+			<Volume>6258600</Volume>
+			<Adj_Close>96.41</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-17</Date>
+			<Open>96.06</Open>
+			<High>96.08</High>
+			<Low>95.60</Low>
+			<Close>95.97</Close>
+			<Volume>3596500</Volume>
+			<Adj_Close>95.97</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-14</Date>
+			<Open>95.38</Open>
+			<High>97.18</High>
+			<Low>95.27</Low>
+			<Close>96.21</Close>
+			<Volume>7793400</Volume>
+			<Adj_Close>96.21</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-13</Date>
+			<Open>95.50</Open>
+			<High>96.22</High>
+			<Low>95.18</Low>
+			<Close>95.48</Close>
+			<Volume>4099800</Volume>
+			<Adj_Close>95.48</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-12</Date>
+			<Open>94.93</Open>
+			<High>95.38</High>
+			<Low>94.83</Low>
+			<Close>95.33</Close>
+			<Volume>2725700</Volume>
+			<Adj_Close>95.33</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-11</Date>
+			<Open>95.22</Open>
+			<High>95.42</High>
+			<Low>94.93</Low>
+			<Close>95.14</Close>
+			<Volume>3414000</Volume>
+			<Adj_Close>95.14</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-10</Date>
+			<Open>95.56</Open>
+			<High>95.69</High>
+			<Low>94.98</Low>
+			<Close>95.11</Close>
+			<Volume>5112200</Volume>
+			<Adj_Close>95.11</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-07</Date>
+			<Open>94.40</Open>
+			<High>95.10</High>
+			<Low>94.06</Low>
+			<Close>95.10</Close>
+			<Volume>4674600</Volume>
+			<Adj_Close>95.10</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-06</Date>
+			<Open>94.74</Open>
+			<High>94.93</High>
+			<Low>94.42</Low>
+			<Close>94.66</Close>
+			<Volume>3597300</Volume>
+			<Adj_Close>94.66</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-05</Date>
+			<Open>95.00</Open>
+			<High>95.07</High>
+			<Low>94.39</Low>
+			<Close>94.64</Close>
+			<Volume>4123800</Volume>
+			<Adj_Close>94.64</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-04</Date>
+			<Open>93.93</Open>
+			<High>94.63</High>
+			<Low>93.77</Low>
+			<Close>94.47</Close>
+			<Volume>5802200</Volume>
+			<Adj_Close>94.47</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-11-03</Date>
+			<Open>93.78</Open>
+			<High>93.78</High>
+			<Low>93.02</Low>
+			<Close>93.61</Close>
+			<Volume>4064900</Volume>
+			<Adj_Close>93.61</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-31</Date>
+			<Open>93.90</Open>
+			<High>94.01</High>
+			<Low>92.83</Low>
+			<Close>93.73</Close>
+			<Volume>6795900</Volume>
+			<Adj_Close>93.73</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-30</Date>
+			<Open>92.57</Open>
+			<High>93.39</High>
+			<Low>92.49</Low>
+			<Close>93.38</Close>
+			<Volume>3965500</Volume>
+			<Adj_Close>93.38</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-29</Date>
+			<Open>92.65</Open>
+			<High>93.12</High>
+			<Low>92.00</Low>
+			<Close>92.73</Close>
+			<Volume>5295900</Volume>
+			<Adj_Close>92.73</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-28</Date>
+			<Open>92.48</Open>
+			<High>92.60</High>
+			<Low>91.69</Low>
+			<Close>92.60</Close>
+			<Volume>5083000</Volume>
+			<Adj_Close>92.60</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-27</Date>
+			<Open>91.52</Open>
+			<High>92.09</High>
+			<Low>91.50</Low>
+			<Close>92.01</Close>
+			<Volume>4071100</Volume>
+			<Adj_Close>92.01</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-24</Date>
+			<Open>90.70</Open>
+			<High>91.79</High>
+			<Low>90.55</Low>
+			<Close>91.67</Close>
+			<Volume>5256600</Volume>
+			<Adj_Close>91.67</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-23</Date>
+			<Open>91.84</Open>
+			<High>92.10</High>
+			<Low>90.88</Low>
+			<Close>91.02</Close>
+			<Volume>5966700</Volume>
+			<Adj_Close>91.02</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-22</Date>
+			<Open>90.70</Open>
+			<High>91.51</High>
+			<Low>90.60</Low>
+			<Close>90.94</Close>
+			<Volume>6455600</Volume>
+			<Adj_Close>90.94</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-21</Date>
+			<Open>89.95</Open>
+			<High>91.45</High>
+			<Low>89.70</Low>
+			<Close>91.01</Close>
+			<Volume>11422200</Volume>
+			<Adj_Close>91.01</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-20</Date>
+			<Open>90.96</Open>
+			<High>91.59</High>
+			<Low>90.71</Low>
+			<Close>91.59</Close>
+			<Volume>5403200</Volume>
+			<Adj_Close>91.59</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-17</Date>
+			<Open>90.41</Open>
+			<High>91.14</High>
+			<Low>89.64</Low>
+			<Close>91.04</Close>
+			<Volume>7074500</Volume>
+			<Adj_Close>91.04</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-16</Date>
+			<Open>89.39</Open>
+			<High>90.29</High>
+			<Low>89.34</Low>
+			<Close>89.91</Close>
+			<Volume>7526400</Volume>
+			<Adj_Close>89.91</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-15</Date>
+			<Open>90.49</Open>
+			<High>90.98</High>
+			<Low>89.57</Low>
+			<Close>90.44</Close>
+			<Volume>10468500</Volume>
+			<Adj_Close>90.44</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-14</Date>
+			<Open>90.81</Open>
+			<High>91.74</High>
+			<Low>90.63</Low>
+			<Close>91.10</Close>
+			<Volume>5539500</Volume>
+			<Adj_Close>91.10</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-13</Date>
+			<Open>92.13</Open>
+			<High>92.42</High>
+			<Low>90.66</Low>
+			<Close>90.73</Close>
+			<Volume>6173800</Volume>
+			<Adj_Close>90.73</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-10</Date>
+			<Open>92.76</Open>
+			<High>93.45</High>
+			<Low>92.30</Low>
+			<Close>92.30</Close>
+			<Volume>5844900</Volume>
+			<Adj_Close>92.30</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-09</Date>
+			<Open>93.77</Open>
+			<High>94.00</High>
+			<Low>92.71</Low>
+			<Close>92.72</Close>
+			<Volume>5068600</Volume>
+			<Adj_Close>92.72</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-08</Date>
+			<Open>93.08</Open>
+			<High>93.95</High>
+			<Low>92.81</Low>
+			<Close>93.83</Close>
+			<Volume>5586600</Volume>
+			<Adj_Close>93.83</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-07</Date>
+			<Open>93.51</Open>
+			<High>93.54</High>
+			<Low>92.80</Low>
+			<Close>92.81</Close>
+			<Volume>6093800</Volume>
+			<Adj_Close>92.81</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-06</Date>
+			<Open>94.36</Open>
+			<High>94.43</High>
+			<Low>93.69</Low>
+			<Close>93.84</Close>
+			<Volume>4278600</Volume>
+			<Adj_Close>93.84</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-03</Date>
+			<Open>95.29</Open>
+			<High>95.29</High>
+			<Low>94.51</Low>
+			<Close>94.86</Close>
+			<Volume>3948600</Volume>
+			<Adj_Close>94.86</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-02</Date>
+			<Open>94.03</Open>
+			<High>94.60</High>
+			<Low>94.00</Low>
+			<Close>94.12</Close>
+			<Volume>4116000</Volume>
+			<Adj_Close>94.12</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-10-01</Date>
+			<Open>94.37</Open>
+			<High>95.08</High>
+			<Low>94.01</Low>
+			<Close>94.19</Close>
+			<Volume>5334600</Volume>
+			<Adj_Close>94.19</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-30</Date>
+			<Open>96.23</Open>
+			<High>96.36</High>
+			<Low>94.34</Low>
+			<Close>94.81</Close>
+			<Volume>10036400</Volume>
+			<Adj_Close>94.81</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-29</Date>
+			<Open>94.26</Open>
+			<High>97.30</High>
+			<Low>93.98</Low>
+			<Close>96.22</Close>
+			<Volume>16489100</Volume>
+			<Adj_Close>96.22</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-26</Date>
+			<Open>94.05</Open>
+			<High>94.88</High>
+			<Low>94.02</Low>
+			<Close>94.70</Close>
+			<Volume>3454400</Volume>
+			<Adj_Close>94.70</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-25</Date>
+			<Open>94.94</Open>
+			<High>95.31</High>
+			<Low>94.06</Low>
+			<Close>94.16</Close>
+			<Volume>4569100</Volume>
+			<Adj_Close>94.16</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-24</Date>
+			<Open>93.70</Open>
+			<High>95.32</High>
+			<Low>93.66</Low>
+			<Close>95.00</Close>
+			<Volume>7817900</Volume>
+			<Adj_Close>95.00</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-23</Date>
+			<Open>93.70</Open>
+			<High>94.15</High>
+			<Low>93.44</Low>
+			<Close>93.51</Close>
+			<Volume>4702700</Volume>
+			<Adj_Close>93.51</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-22</Date>
+			<Open>94.12</Open>
+			<High>94.47</High>
+			<Low>93.82</Low>
+			<Close>93.93</Close>
+			<Volume>4875700</Volume>
+			<Adj_Close>93.93</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-19</Date>
+			<Open>93.95</Open>
+			<High>94.93</High>
+			<Low>93.80</Low>
+			<Close>94.36</Close>
+			<Volume>9043100</Volume>
+			<Adj_Close>94.36</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-18</Date>
+			<Open>93.43</Open>
+			<High>93.90</High>
+			<Low>93.26</Low>
+			<Close>93.48</Close>
+			<Volume>5488900</Volume>
+			<Adj_Close>93.48</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-17</Date>
+			<Open>93.68</Open>
+			<High>93.83</High>
+			<Low>93.18</Low>
+			<Close>93.53</Close>
+			<Volume>5738600</Volume>
+			<Adj_Close>93.53</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-16</Date>
+			<Open>93.27</Open>
+			<High>94.11</High>
+			<Low>93.25</Low>
+			<Close>93.75</Close>
+			<Volume>5826200</Volume>
+			<Adj_Close>93.75</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-15</Date>
+			<Open>93.26</Open>
+			<High>93.91</High>
+			<Low>93.25</Low>
+			<Close>93.47</Close>
+			<Volume>6255000</Volume>
+			<Adj_Close>93.47</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-12</Date>
+			<Open>92.94</Open>
+			<High>93.84</High>
+			<Low>92.82</Low>
+			<Close>93.34</Close>
+			<Volume>8033100</Volume>
+			<Adj_Close>93.34</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-11</Date>
+			<Open>92.94</Open>
+			<High>93.29</High>
+			<Low>92.42</Low>
+			<Close>92.96</Close>
+			<Volume>5960100</Volume>
+			<Adj_Close>92.96</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-10</Date>
+			<Open>90.84</Open>
+			<High>93.06</High>
+			<Low>90.53</Low>
+			<Close>93.00</Close>
+			<Volume>12031400</Volume>
+			<Adj_Close>93.00</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-09</Date>
+			<Open>92.60</Open>
+			<High>92.70</High>
+			<Low>90.96</Low>
+			<Close>91.09</Close>
+			<Volume>9795200</Volume>
+			<Adj_Close>91.09</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-08</Date>
+			<Open>92.80</Open>
+			<High>92.82</High>
+			<Low>92.20</Low>
+			<Close>92.50</Close>
+			<Volume>5251900</Volume>
+			<Adj_Close>92.50</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-05</Date>
+			<Open>93.10</Open>
+			<High>93.12</High>
+			<Low>92.80</Low>
+			<Close>93.07</Close>
+			<Volume>4004600</Volume>
+			<Adj_Close>93.07</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-04</Date>
+			<Open>93.02</Open>
+			<High>93.23</High>
+			<Low>92.80</Low>
+			<Close>93.01</Close>
+			<Volume>4849800</Volume>
+			<Adj_Close>93.01</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-03</Date>
+			<Open>93.27</Open>
+			<High>93.49</High>
+			<Low>93.04</Low>
+			<Close>93.14</Close>
+			<Volume>4855300</Volume>
+			<Adj_Close>93.14</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-09-02</Date>
+			<Open>93.24</Open>
+			<High>93.70</High>
+			<Low>92.69</Low>
+			<Close>92.80</Close>
+			<Volume>6727100</Volume>
+			<Adj_Close>92.80</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-29</Date>
+			<Open>94.20</Open>
+			<High>94.20</High>
+			<Low>93.51</Low>
+			<Close>93.72</Close>
+			<Volume>4635100</Volume>
+			<Adj_Close>93.72</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-28</Date>
+			<Open>93.65</Open>
+			<High>94.76</High>
+			<Low>93.51</Low>
+			<Close>94.14</Close>
+			<Volume>5492400</Volume>
+			<Adj_Close>94.14</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-27</Date>
+			<Open>94.23</Open>
+			<High>94.68</High>
+			<Low>93.60</Low>
+			<Close>94.65</Close>
+			<Volume>9027300</Volume>
+			<Adj_Close>93.84</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-26</Date>
+			<Open>94.39</Open>
+			<High>94.79</High>
+			<Low>94.05</Low>
+			<Close>94.11</Close>
+			<Volume>6392400</Volume>
+			<Adj_Close>93.30</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-25</Date>
+			<Open>94.85</Open>
+			<High>95.37</High>
+			<Low>94.41</Low>
+			<Close>94.44</Close>
+			<Volume>4614300</Volume>
+			<Adj_Close>93.63</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-22</Date>
+			<Open>94.53</Open>
+			<High>94.86</High>
+			<Low>94.27</Low>
+			<Close>94.45</Close>
+			<Volume>3586900</Volume>
+			<Adj_Close>93.64</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-21</Date>
+			<Open>94.31</Open>
+			<High>94.76</High>
+			<Low>94.24</Low>
+			<Close>94.53</Close>
+			<Volume>5981600</Volume>
+			<Adj_Close>93.72</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-20</Date>
+			<Open>94.45</Open>
+			<High>94.66</High>
+			<Low>94.00</Low>
+			<Close>94.19</Close>
+			<Volume>4150400</Volume>
+			<Adj_Close>93.38</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-19</Date>
+			<Open>94.60</Open>
+			<High>94.75</High>
+			<Low>94.26</Low>
+			<Close>94.45</Close>
+			<Volume>3331700</Volume>
+			<Adj_Close>93.64</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-18</Date>
+			<Open>94.15</Open>
+			<High>94.74</High>
+			<Low>93.93</Low>
+			<Close>94.25</Close>
+			<Volume>4398800</Volume>
+			<Adj_Close>93.44</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-15</Date>
+			<Open>94.07</Open>
+			<High>94.47</High>
+			<Low>93.41</Low>
+			<Close>93.79</Close>
+			<Volume>4281300</Volume>
+			<Adj_Close>92.99</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-14</Date>
+			<Open>93.65</Open>
+			<High>93.89</High>
+			<Low>93.26</Low>
+			<Close>93.66</Close>
+			<Volume>5644500</Volume>
+			<Adj_Close>92.86</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-13</Date>
+			<Open>93.75</Open>
+			<High>94.32</High>
+			<Low>93.55</Low>
+			<Close>93.96</Close>
+			<Volume>3599900</Volume>
+			<Adj_Close>93.16</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-12</Date>
+			<Open>93.43</Open>
+			<High>93.65</High>
+			<Low>93.15</Low>
+			<Close>93.56</Close>
+			<Volume>3235900</Volume>
+			<Adj_Close>92.76</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-11</Date>
+			<Open>93.73</Open>
+			<High>93.92</High>
+			<Low>93.46</Low>
+			<Close>93.53</Close>
+			<Volume>4288400</Volume>
+			<Adj_Close>92.73</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-08</Date>
+			<Open>93.07</Open>
+			<High>93.84</High>
+			<Low>92.92</Low>
+			<Close>93.55</Close>
+			<Volume>6505900</Volume>
+			<Adj_Close>92.75</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-07</Date>
+			<Open>93.82</Open>
+			<High>94.00</High>
+			<Low>93.24</Low>
+			<Close>93.31</Close>
+			<Volume>3261100</Volume>
+			<Adj_Close>92.51</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-06</Date>
+			<Open>93.39</Open>
+			<High>93.95</High>
+			<Low>93.36</Low>
+			<Close>93.47</Close>
+			<Volume>3728000</Volume>
+			<Adj_Close>92.67</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-05</Date>
+			<Open>94.00</Open>
+			<High>94.30</High>
+			<Low>93.35</Low>
+			<Close>93.43</Close>
+			<Volume>5494800</Volume>
+			<Adj_Close>92.63</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-04</Date>
+			<Open>94.30</Open>
+			<High>94.35</High>
+			<Low>93.52</Low>
+			<Close>94.31</Close>
+			<Volume>7652700</Volume>
+			<Adj_Close>93.50</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-08-01</Date>
+			<Open>94.30</Open>
+			<High>94.73</High>
+			<Low>94.20</Low>
+			<Close>94.30</Close>
+			<Volume>4576400</Volume>
+			<Adj_Close>93.49</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-31</Date>
+			<Open>95.22</Open>
+			<High>95.36</High>
+			<Low>94.56</Low>
+			<Close>94.56</Close>
+			<Volume>6826000</Volume>
+			<Adj_Close>93.75</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-30</Date>
+			<Open>96.19</Open>
+			<High>96.34</High>
+			<Low>95.57</Low>
+			<Close>95.95</Close>
+			<Volume>6049800</Volume>
+			<Adj_Close>95.13</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-29</Date>
+			<Open>95.89</Open>
+			<High>96.42</High>
+			<Low>95.71</Low>
+			<Close>95.82</Close>
+			<Volume>6712700</Volume>
+			<Adj_Close>95.00</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-28</Date>
+			<Open>95.50</Open>
+			<High>95.97</High>
+			<Low>95.39</Low>
+			<Close>95.78</Close>
+			<Volume>4863100</Volume>
+			<Adj_Close>94.96</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-25</Date>
+			<Open>95.36</Open>
+			<High>95.85</High>
+			<Low>95.32</Low>
+			<Close>95.72</Close>
+			<Volume>4992500</Volume>
+			<Adj_Close>94.90</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-24</Date>
+			<Open>95.48</Open>
+			<High>95.62</High>
+			<Low>95.27</Low>
+			<Close>95.35</Close>
+			<Volume>7781700</Volume>
+			<Adj_Close>94.53</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-23</Date>
+			<Open>95.51</Open>
+			<High>95.82</High>
+			<Low>94.82</Low>
+			<Close>95.35</Close>
+			<Volume>9483200</Volume>
+			<Adj_Close>94.53</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-22</Date>
+			<Open>95.39</Open>
+			<High>96.85</High>
+			<Low>95.10</Low>
+			<Close>96.27</Close>
+			<Volume>12398100</Volume>
+			<Adj_Close>95.45</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-21</Date>
+			<Open>98.52</Open>
+			<High>98.63</High>
+			<Low>97.55</Low>
+			<Close>97.55</Close>
+			<Volume>6510600</Volume>
+			<Adj_Close>96.72</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-18</Date>
+			<Open>98.64</Open>
+			<High>99.09</High>
+			<Low>98.13</Low>
+			<Close>98.99</Close>
+			<Volume>4044900</Volume>
+			<Adj_Close>98.14</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-17</Date>
+			<Open>98.96</Open>
+			<High>99.09</High>
+			<Low>98.35</Low>
+			<Close>98.37</Close>
+			<Volume>4099100</Volume>
+			<Adj_Close>97.53</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-16</Date>
+			<Open>99.65</Open>
+			<High>99.80</High>
+			<Low>98.76</Low>
+			<Close>99.27</Close>
+			<Volume>7128700</Volume>
+			<Adj_Close>98.42</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-15</Date>
+			<Open>100.32</Open>
+			<High>100.37</High>
+			<Low>99.86</Low>
+			<Close>100.30</Close>
+			<Volume>3787000</Volume>
+			<Adj_Close>99.44</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-14</Date>
+			<Open>100.69</Open>
+			<High>100.73</High>
+			<Low>100.30</Low>
+			<Close>100.47</Close>
+			<Volume>4159900</Volume>
+			<Adj_Close>99.61</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-11</Date>
+			<Open>100.66</Open>
+			<High>100.81</High>
+			<Low>100.03</Low>
+			<Close>100.37</Close>
+			<Volume>2812500</Volume>
+			<Adj_Close>99.51</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-10</Date>
+			<Open>100.22</Open>
+			<High>101.05</High>
+			<Low>100.16</Low>
+			<Close>100.58</Close>
+			<Volume>3274900</Volume>
+			<Adj_Close>99.72</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-09</Date>
+			<Open>100.30</Open>
+			<High>101.25</High>
+			<Low>100.26</Low>
+			<Close>101.07</Close>
+			<Volume>5604900</Volume>
+			<Adj_Close>100.21</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-08</Date>
+			<Open>99.79</Open>
+			<High>100.57</High>
+			<Low>99.73</Low>
+			<Close>100.09</Close>
+			<Volume>3115100</Volume>
+			<Adj_Close>99.23</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-07</Date>
+			<Open>100.75</Open>
+			<High>100.75</High>
+			<Low>99.82</Low>
+			<Close>100.17</Close>
+			<Volume>3951700</Volume>
+			<Adj_Close>99.31</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-03</Date>
+			<Open>101.32</Open>
+			<High>101.32</High>
+			<Low>100.74</Low>
+			<Close>100.98</Close>
+			<Volume>2295800</Volume>
+			<Adj_Close>100.12</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-02</Date>
+			<Open>101.02</Open>
+			<High>101.08</High>
+			<Low>100.35</Low>
+			<Close>100.53</Close>
+			<Volume>3216700</Volume>
+			<Adj_Close>99.67</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-07-01</Date>
+			<Open>100.43</Open>
+			<High>101.36</High>
+			<Low>100.24</Low>
+			<Close>101.00</Close>
+			<Volume>3787700</Volume>
+			<Adj_Close>100.14</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-30</Date>
+			<Open>101.27</Open>
+			<High>101.48</High>
+			<Low>100.50</Low>
+			<Close>100.74</Close>
+			<Volume>4265700</Volume>
+			<Adj_Close>99.88</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-27</Date>
+			<Open>101.25</Open>
+			<High>101.67</High>
+			<Low>101.15</Low>
+			<Close>101.46</Close>
+			<Volume>2785500</Volume>
+			<Adj_Close>100.59</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-26</Date>
+			<Open>101.61</Open>
+			<High>101.89</High>
+			<Low>101.07</Low>
+			<Close>101.51</Close>
+			<Volume>2783200</Volume>
+			<Adj_Close>100.64</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-25</Date>
+			<Open>101.09</Open>
+			<High>101.90</High>
+			<Low>101.03</Low>
+			<Close>101.61</Close>
+			<Volume>3662000</Volume>
+			<Adj_Close>100.74</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-24</Date>
+			<Open>101.84</Open>
+			<High>102.18</High>
+			<Low>101.41</Low>
+			<Close>101.47</Close>
+			<Volume>4586400</Volume>
+			<Adj_Close>100.60</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-23</Date>
+			<Open>101.64</Open>
+			<High>101.99</High>
+			<Low>101.51</Low>
+			<Close>101.91</Close>
+			<Volume>2919000</Volume>
+			<Adj_Close>101.04</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-20</Date>
+			<Open>102.20</Open>
+			<High>102.30</High>
+			<Low>101.66</Low>
+			<Close>101.92</Close>
+			<Volume>5418100</Volume>
+			<Adj_Close>101.05</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-19</Date>
+			<Open>101.04</Open>
+			<High>102.03</High>
+			<Low>101.04</Low>
+			<Close>101.91</Close>
+			<Volume>3372200</Volume>
+			<Adj_Close>101.04</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-18</Date>
+			<Open>101.74</Open>
+			<High>101.79</High>
+			<Low>100.91</Low>
+			<Close>101.35</Close>
+			<Volume>5441200</Volume>
+			<Adj_Close>100.48</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-17</Date>
+			<Open>100.91</Open>
+			<High>101.84</High>
+			<Low>100.82</Low>
+			<Close>101.27</Close>
+			<Volume>6479700</Volume>
+			<Adj_Close>100.40</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-16</Date>
+			<Open>100.42</Open>
+			<High>101.17</High>
+			<Low>100.24</Low>
+			<Close>101.10</Close>
+			<Volume>4038600</Volume>
+			<Adj_Close>100.23</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-13</Date>
+			<Open>99.41</Open>
+			<High>100.59</High>
+			<Low>99.41</Low>
+			<Close>100.49</Close>
+			<Volume>4014600</Volume>
+			<Adj_Close>99.63</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-12</Date>
+			<Open>100.41</Open>
+			<High>101.01</High>
+			<Low>99.54</Low>
+			<Close>99.76</Close>
+			<Volume>5609100</Volume>
+			<Adj_Close>98.91</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-11</Date>
+			<Open>100.74</Open>
+			<High>100.96</High>
+			<Low>100.33</Low>
+			<Close>100.42</Close>
+			<Volume>6606100</Volume>
+			<Adj_Close>99.56</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-10</Date>
+			<Open>101.61</Open>
+			<High>101.61</High>
+			<Low>100.68</Low>
+			<Close>100.88</Close>
+			<Volume>5961200</Volume>
+			<Adj_Close>100.02</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-09</Date>
+			<Open>101.59</Open>
+			<High>102.00</High>
+			<Low>101.18</Low>
+			<Close>101.38</Close>
+			<Volume>3802600</Volume>
+			<Adj_Close>100.51</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-06</Date>
+			<Open>102.41</Open>
+			<High>102.62</High>
+			<Low>101.78</Low>
+			<Close>101.96</Close>
+			<Volume>2955500</Volume>
+			<Adj_Close>101.09</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-05</Date>
+			<Open>102.34</Open>
+			<High>102.60</High>
+			<Low>101.75</Low>
+			<Close>102.45</Close>
+			<Volume>2407800</Volume>
+			<Adj_Close>101.57</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-04</Date>
+			<Open>101.36</Open>
+			<High>102.47</High>
+			<Low>101.27</Low>
+			<Close>102.44</Close>
+			<Volume>3589200</Volume>
+			<Adj_Close>101.56</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-03</Date>
+			<Open>101.64</Open>
+			<High>102.00</High>
+			<Low>101.41</Low>
+			<Close>101.45</Close>
+			<Volume>3363500</Volume>
+			<Adj_Close>100.58</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-06-02</Date>
+			<Open>101.39</Open>
+			<High>102.50</High>
+			<Low>101.32</Low>
+			<Close>102.03</Close>
+			<Volume>3001400</Volume>
+			<Adj_Close>101.16</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-30</Date>
+			<Open>101.25</Open>
+			<High>101.46</High>
+			<Low>100.71</Low>
+			<Close>101.43</Close>
+			<Volume>4232800</Volume>
+			<Adj_Close>100.56</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-29</Date>
+			<Open>101.27</Open>
+			<High>101.49</High>
+			<Low>100.87</Low>
+			<Close>101.34</Close>
+			<Volume>4123700</Volume>
+			<Adj_Close>100.47</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-28</Date>
+			<Open>101.84</Open>
+			<High>102.04</High>
+			<Low>100.87</Low>
+			<Close>101.30</Close>
+			<Volume>8930700</Volume>
+			<Adj_Close>99.63</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-27</Date>
+			<Open>102.20</Open>
+			<High>102.90</High>
+			<Low>102.07</Low>
+			<Close>102.36</Close>
+			<Volume>5093200</Volume>
+			<Adj_Close>100.67</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-23</Date>
+			<Open>102.52</Open>
+			<High>102.85</High>
+			<Low>101.77</Low>
+			<Close>102.00</Close>
+			<Volume>4174300</Volume>
+			<Adj_Close>100.32</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-22</Date>
+			<Open>102.65</Open>
+			<High>102.98</High>
+			<Low>102.23</Low>
+			<Close>102.45</Close>
+			<Volume>3376000</Volume>
+			<Adj_Close>100.76</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-21</Date>
+			<Open>101.71</Open>
+			<High>102.58</High>
+			<Low>101.55</Low>
+			<Close>102.56</Close>
+			<Volume>2735600</Volume>
+			<Adj_Close>100.87</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-20</Date>
+			<Open>102.05</Open>
+			<High>102.44</High>
+			<Low>101.44</Low>
+			<Close>101.53</Close>
+			<Volume>3123700</Volume>
+			<Adj_Close>99.86</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-19</Date>
+			<Open>102.81</Open>
+			<High>102.83</High>
+			<Low>101.74</Low>
+			<Close>102.09</Close>
+			<Volume>3859800</Volume>
+			<Adj_Close>100.41</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-16</Date>
+			<Open>102.55</Open>
+			<High>103.39</High>
+			<Low>102.35</Low>
+			<Close>103.14</Close>
+			<Volume>5081000</Volume>
+			<Adj_Close>101.44</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-15</Date>
+			<Open>102.78</Open>
+			<High>103.00</High>
+			<Low>102.15</Low>
+			<Close>102.50</Close>
+			<Volume>3810800</Volume>
+			<Adj_Close>100.81</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-14</Date>
+			<Open>103.69</Open>
+			<High>103.78</High>
+			<Low>102.54</Low>
+			<Close>103.03</Close>
+			<Volume>3826300</Volume>
+			<Adj_Close>101.33</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-13</Date>
+			<Open>103.32</Open>
+			<High>103.62</High>
+			<Low>102.50</Low>
+			<Close>103.53</Close>
+			<Volume>3955400</Volume>
+			<Adj_Close>101.82</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-12</Date>
+			<Open>102.95</Open>
+			<High>103.33</High>
+			<Low>102.79</Low>
+			<Close>102.86</Close>
+			<Volume>3817400</Volume>
+			<Adj_Close>101.16</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-09</Date>
+			<Open>101.85</Open>
+			<High>102.95</High>
+			<Low>101.82</Low>
+			<Close>102.93</Close>
+			<Volume>3649400</Volume>
+			<Adj_Close>101.23</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-08</Date>
+			<Open>102.00</Open>
+			<High>102.18</High>
+			<Low>101.43</Low>
+			<Close>101.95</Close>
+			<Volume>3384500</Volume>
+			<Adj_Close>100.27</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-07</Date>
+			<Open>101.26</Open>
+			<High>102.11</High>
+			<Low>100.95</Low>
+			<Close>101.96</Close>
+			<Volume>4322600</Volume>
+			<Adj_Close>100.28</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-06</Date>
+			<Open>101.06</Open>
+			<High>101.30</High>
+			<Low>100.80</Low>
+			<Close>100.95</Close>
+			<Volume>3075100</Volume>
+			<Adj_Close>99.29</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-05</Date>
+			<Open>101.38</Open>
+			<High>101.38</High>
+			<Low>100.59</Low>
+			<Close>101.14</Close>
+			<Volume>3483500</Volume>
+			<Adj_Close>99.47</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-02</Date>
+			<Open>101.11</Open>
+			<High>102.28</High>
+			<Low>100.99</Low>
+			<Close>101.43</Close>
+			<Volume>4934000</Volume>
+			<Adj_Close>99.76</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-05-01</Date>
+			<Open>100.68</Open>
+			<High>101.04</High>
+			<Low>100.33</Low>
+			<Close>100.96</Close>
+			<Volume>3531400</Volume>
+			<Adj_Close>99.30</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-30</Date>
+			<Open>101.55</Open>
+			<High>101.76</High>
+			<Low>101.04</Low>
+			<Close>101.38</Close>
+			<Volume>4519800</Volume>
+			<Adj_Close>99.71</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-29</Date>
+			<Open>100.21</Open>
+			<High>101.78</High>
+			<Low>99.81</Low>
+			<Close>101.50</Close>
+			<Volume>6626100</Volume>
+			<Adj_Close>99.83</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-28</Date>
+			<Open>100.98</Open>
+			<High>101.18</High>
+			<Low>99.65</Low>
+			<Close>100.31</Close>
+			<Volume>7444500</Volume>
+			<Adj_Close>98.66</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-25</Date>
+			<Open>99.85</Open>
+			<High>100.75</High>
+			<Low>99.39</Low>
+			<Close>100.73</Close>
+			<Volume>5047100</Volume>
+			<Adj_Close>99.07</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-24</Date>
+			<Open>99.52</Open>
+			<High>100.10</High>
+			<Low>99.13</Low>
+			<Close>99.84</Close>
+			<Volume>4764900</Volume>
+			<Adj_Close>98.19</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-23</Date>
+			<Open>99.35</Open>
+			<High>99.99</High>
+			<Low>99.01</Low>
+			<Close>99.13</Close>
+			<Volume>4179100</Volume>
+			<Adj_Close>97.50</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-22</Date>
+			<Open>100.02</Open>
+			<High>100.27</High>
+			<Low>98.89</Low>
+			<Close>99.32</Close>
+			<Volume>8934300</Volume>
+			<Adj_Close>97.68</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-21</Date>
+			<Open>99.80</Open>
+			<High>100.39</High>
+			<Low>99.25</Low>
+			<Close>99.67</Close>
+			<Volume>6357000</Volume>
+			<Adj_Close>98.03</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-17</Date>
+			<Open>100.73</Open>
+			<High>101.00</High>
+			<Low>100.25</Low>
+			<Close>100.25</Close>
+			<Volume>4545200</Volume>
+			<Adj_Close>98.60</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-16</Date>
+			<Open>101.00</Open>
+			<High>101.12</High>
+			<Low>100.49</Low>
+			<Close>100.83</Close>
+			<Volume>3532700</Volume>
+			<Adj_Close>99.17</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-15</Date>
+			<Open>100.70</Open>
+			<High>100.94</High>
+			<Low>100.07</Low>
+			<Close>100.83</Close>
+			<Volume>5882400</Volume>
+			<Adj_Close>99.17</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-14</Date>
+			<Open>99.66</Open>
+			<High>100.16</High>
+			<Low>99.32</Low>
+			<Close>100.11</Close>
+			<Volume>6155900</Volume>
+			<Adj_Close>98.46</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-11</Date>
+			<Open>99.15</Open>
+			<High>99.73</High>
+			<Low>99.06</Low>
+			<Close>99.29</Close>
+			<Volume>6553600</Volume>
+			<Adj_Close>97.65</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-10</Date>
+			<Open>98.55</Open>
+			<High>99.85</High>
+			<Low>98.16</Low>
+			<Close>99.43</Close>
+			<Volume>8873000</Volume>
+			<Adj_Close>97.79</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-09</Date>
+			<Open>98.08</Open>
+			<High>98.54</High>
+			<Low>97.90</Low>
+			<Close>98.35</Close>
+			<Volume>3669500</Volume>
+			<Adj_Close>96.73</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-08</Date>
+			<Open>96.98</Open>
+			<High>98.22</High>
+			<Low>96.52</Low>
+			<Close>98.08</Close>
+			<Volume>5579500</Volume>
+			<Adj_Close>96.46</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-07</Date>
+			<Open>97.58</Open>
+			<High>98.24</High>
+			<Low>96.57</Low>
+			<Close>97.01</Close>
+			<Volume>5994600</Volume>
+			<Adj_Close>95.41</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-04</Date>
+			<Open>97.77</Open>
+			<High>98.42</High>
+			<Low>97.39</Low>
+			<Close>97.87</Close>
+			<Volume>5409000</Volume>
+			<Adj_Close>96.26</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-03</Date>
+			<Open>98.03</Open>
+			<High>98.11</High>
+			<Low>97.35</Low>
+			<Close>97.66</Close>
+			<Volume>2575700</Volume>
+			<Adj_Close>96.05</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-02</Date>
+			<Open>98.15</Open>
+			<High>98.23</High>
+			<Low>97.34</Low>
+			<Close>97.59</Close>
+			<Volume>3701200</Volume>
+			<Adj_Close>95.98</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-04-01</Date>
+			<Open>98.10</Open>
+			<High>98.52</High>
+			<Low>97.63</Low>
+			<Close>97.90</Close>
+			<Volume>4494000</Volume>
+			<Adj_Close>96.29</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-31</Date>
+			<Open>97.44</Open>
+			<High>98.45</High>
+			<Low>97.30</Low>
+			<Close>98.03</Close>
+			<Volume>4853300</Volume>
+			<Adj_Close>96.41</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-28</Date>
+			<Open>96.27</Open>
+			<High>97.44</High>
+			<Low>96.21</Low>
+			<Close>97.24</Close>
+			<Volume>4344100</Volume>
+			<Adj_Close>95.64</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-27</Date>
+			<Open>95.77</Open>
+			<High>96.36</High>
+			<Low>95.52</Low>
+			<Close>96.16</Close>
+			<Volume>3756000</Volume>
+			<Adj_Close>94.57</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-26</Date>
+			<Open>96.04</Open>
+			<High>96.57</High>
+			<Low>95.84</Low>
+			<Close>95.84</Close>
+			<Volume>4127000</Volume>
+			<Adj_Close>94.26</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-25</Date>
+			<Open>96.44</Open>
+			<High>96.49</High>
+			<Low>95.83</Low>
+			<Close>95.91</Close>
+			<Volume>4929800</Volume>
+			<Adj_Close>94.33</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-24</Date>
+			<Open>96.09</Open>
+			<High>96.74</High>
+			<Low>95.99</Low>
+			<Close>96.18</Close>
+			<Volume>6393000</Volume>
+			<Adj_Close>94.59</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-21</Date>
+			<Open>97.22</Open>
+			<High>97.40</High>
+			<Low>95.47</Low>
+			<Close>95.47</Close>
+			<Volume>12625800</Volume>
+			<Adj_Close>93.90</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-20</Date>
+			<Open>95.94</Open>
+			<High>96.95</High>
+			<Low>95.81</Low>
+			<Close>96.60</Close>
+			<Volume>4242600</Volume>
+			<Adj_Close>95.01</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-19</Date>
+			<Open>97.27</Open>
+			<High>97.29</High>
+			<Low>95.78</Low>
+			<Close>96.10</Close>
+			<Volume>5556900</Volume>
+			<Adj_Close>94.52</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-18</Date>
+			<Open>97.80</Open>
+			<High>97.99</High>
+			<Low>97.22</Low>
+			<Close>97.31</Close>
+			<Volume>3269500</Volume>
+			<Adj_Close>95.71</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-17</Date>
+			<Open>98.14</Open>
+			<High>98.20</High>
+			<Low>97.46</Low>
+			<Close>97.60</Close>
+			<Volume>5554300</Volume>
+			<Adj_Close>95.99</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-14</Date>
+			<Open>97.33</Open>
+			<High>97.89</High>
+			<Low>97.01</Low>
+			<Close>97.58</Close>
+			<Volume>5510700</Volume>
+			<Adj_Close>95.97</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-13</Date>
+			<Open>98.90</Open>
+			<High>98.90</High>
+			<Low>97.01</Low>
+			<Close>97.37</Close>
+			<Volume>5480200</Volume>
+			<Adj_Close>95.76</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-12</Date>
+			<Open>98.41</Open>
+			<High>99.07</High>
+			<Low>98.15</Low>
+			<Close>98.71</Close>
+			<Volume>6701700</Volume>
+			<Adj_Close>97.08</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-11</Date>
+			<Open>95.94</Open>
+			<High>98.92</High>
+			<Low>95.71</Low>
+			<Close>98.78</Close>
+			<Volume>16354400</Volume>
+			<Adj_Close>97.15</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-10</Date>
+			<Open>95.26</Open>
+			<High>95.68</High>
+			<Low>94.97</Low>
+			<Close>95.20</Close>
+			<Volume>4388900</Volume>
+			<Adj_Close>93.63</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-07</Date>
+			<Open>95.74</Open>
+			<High>95.79</High>
+			<Low>94.97</Low>
+			<Close>95.50</Close>
+			<Volume>3724000</Volume>
+			<Adj_Close>93.93</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-06</Date>
+			<Open>95.06</Open>
+			<High>95.67</High>
+			<Low>94.75</Low>
+			<Close>95.58</Close>
+			<Volume>4362900</Volume>
+			<Adj_Close>94.00</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-05</Date>
+			<Open>95.34</Open>
+			<High>95.61</High>
+			<Low>94.94</Low>
+			<Close>95.02</Close>
+			<Volume>3913300</Volume>
+			<Adj_Close>93.45</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-04</Date>
+			<Open>95.25</Open>
+			<High>95.27</High>
+			<Low>94.86</Low>
+			<Close>94.98</Close>
+			<Volume>4655200</Volume>
+			<Adj_Close>93.41</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-03-03</Date>
+			<Open>94.24</Open>
+			<High>94.80</High>
+			<Low>94.00</Low>
+			<Close>94.32</Close>
+			<Volume>5149300</Volume>
+			<Adj_Close>92.77</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-28</Date>
+			<Open>95.11</Open>
+			<High>95.46</High>
+			<Low>94.86</Low>
+			<Close>95.15</Close>
+			<Volume>5104700</Volume>
+			<Adj_Close>93.58</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-27</Date>
+			<Open>95.24</Open>
+			<High>95.41</High>
+			<Low>94.65</Low>
+			<Close>95.08</Close>
+			<Volume>4179600</Volume>
+			<Adj_Close>93.51</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-26</Date>
+			<Open>96.63</Open>
+			<High>96.74</High>
+			<Low>95.71</Low>
+			<Close>95.89</Close>
+			<Volume>4265900</Volume>
+			<Adj_Close>93.51</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-25</Date>
+			<Open>96.46</Open>
+			<High>96.72</High>
+			<Low>95.89</Low>
+			<Close>96.62</Close>
+			<Volume>4233600</Volume>
+			<Adj_Close>94.22</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-24</Date>
+			<Open>96.43</Open>
+			<High>96.94</High>
+			<Low>96.24</Low>
+			<Close>96.50</Close>
+			<Volume>4472200</Volume>
+			<Adj_Close>94.11</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-21</Date>
+			<Open>96.04</Open>
+			<High>97.00</High>
+			<Low>96.04</Low>
+			<Close>96.45</Close>
+			<Volume>5284300</Volume>
+			<Adj_Close>94.06</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-20</Date>
+			<Open>95.66</Open>
+			<High>96.11</High>
+			<Low>95.49</Low>
+			<Close>95.75</Close>
+			<Volume>2975000</Volume>
+			<Adj_Close>93.38</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-19</Date>
+			<Open>95.78</Open>
+			<High>96.66</High>
+			<Low>95.46</Low>
+			<Close>95.55</Close>
+			<Volume>4505500</Volume>
+			<Adj_Close>93.18</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-18</Date>
+			<Open>96.03</Open>
+			<High>96.57</High>
+			<Low>95.54</Low>
+			<Close>96.02</Close>
+			<Volume>5454200</Volume>
+			<Adj_Close>93.64</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-14</Date>
+			<Open>95.30</Open>
+			<High>95.97</High>
+			<Low>95.11</Low>
+			<Close>95.78</Close>
+			<Volume>3532900</Volume>
+			<Adj_Close>93.41</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-13</Date>
+			<Open>94.69</Open>
+			<High>95.58</High>
+			<Low>94.50</Low>
+			<Close>95.46</Close>
+			<Volume>3617900</Volume>
+			<Adj_Close>93.09</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-12</Date>
+			<Open>95.44</Open>
+			<High>95.67</High>
+			<Low>94.79</Low>
+			<Close>94.89</Close>
+			<Volume>4268900</Volume>
+			<Adj_Close>92.54</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-11</Date>
+			<Open>95.06</Open>
+			<High>95.84</High>
+			<Low>94.83</Low>
+			<Close>95.34</Close>
+			<Volume>5343500</Volume>
+			<Adj_Close>92.98</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-10</Date>
+			<Open>95.75</Open>
+			<High>95.93</High>
+			<Low>94.52</Low>
+			<Close>94.86</Close>
+			<Volume>6968200</Volume>
+			<Adj_Close>92.51</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-07</Date>
+			<Open>95.09</Open>
+			<High>95.95</High>
+			<Low>94.62</Low>
+			<Close>95.92</Close>
+			<Volume>6591200</Volume>
+			<Adj_Close>93.54</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-06</Date>
+			<Open>93.87</Open>
+			<High>95.19</High>
+			<Low>93.69</Low>
+			<Close>94.94</Close>
+			<Volume>5356900</Volume>
+			<Adj_Close>92.59</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-05</Date>
+			<Open>92.80</Open>
+			<High>93.84</High>
+			<Low>92.22</Low>
+			<Close>93.58</Close>
+			<Volume>4958900</Volume>
+			<Adj_Close>91.26</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-04</Date>
+			<Open>92.86</Open>
+			<High>93.47</High>
+			<Low>92.59</Low>
+			<Close>93.09</Close>
+			<Volume>6300400</Volume>
+			<Adj_Close>90.78</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-02-03</Date>
+			<Open>94.54</Open>
+			<High>94.74</High>
+			<Low>92.91</Low>
+			<Close>93.02</Close>
+			<Volume>6904700</Volume>
+			<Adj_Close>90.71</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-31</Date>
+			<Open>93.05</Open>
+			<High>94.55</High>
+			<Low>92.95</Low>
+			<Close>94.17</Close>
+			<Volume>5972500</Volume>
+			<Adj_Close>91.84</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-30</Date>
+			<Open>93.39</Open>
+			<High>94.00</High>
+			<Low>92.93</Low>
+			<Close>93.80</Close>
+			<Volume>4987400</Volume>
+			<Adj_Close>91.47</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-29</Date>
+			<Open>93.96</Open>
+			<High>94.30</High>
+			<Low>92.87</Low>
+			<Close>93.15</Close>
+			<Volume>8013500</Volume>
+			<Adj_Close>90.84</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-28</Date>
+			<Open>94.33</Open>
+			<High>94.64</High>
+			<Low>94.10</Low>
+			<Close>94.18</Close>
+			<Volume>3682800</Volume>
+			<Adj_Close>91.84</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-27</Date>
+			<Open>94.29</Open>
+			<High>94.68</High>
+			<Low>93.92</Low>
+			<Close>94.07</Close>
+			<Volume>6607600</Volume>
+			<Adj_Close>91.74</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-24</Date>
+			<Open>94.73</Open>
+			<High>95.96</High>
+			<Low>94.39</Low>
+			<Close>94.43</Close>
+			<Volume>6944800</Volume>
+			<Adj_Close>92.09</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-23</Date>
+			<Open>94.55</Open>
+			<High>95.95</High>
+			<Low>94.50</Low>
+			<Close>95.32</Close>
+			<Volume>7146000</Volume>
+			<Adj_Close>92.96</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-22</Date>
+			<Open>95.07</Open>
+			<High>95.32</High>
+			<Low>94.69</Low>
+			<Close>94.88</Close>
+			<Volume>4976400</Volume>
+			<Adj_Close>92.53</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-21</Date>
+			<Open>95.36</Open>
+			<High>95.96</High>
+			<Low>95.01</Low>
+			<Close>95.08</Close>
+			<Volume>6462700</Volume>
+			<Adj_Close>92.72</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-17</Date>
+			<Open>96.02</Open>
+			<High>96.13</High>
+			<Low>94.77</Low>
+			<Close>94.93</Close>
+			<Volume>5975300</Volume>
+			<Adj_Close>92.58</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-16</Date>
+			<Open>95.40</Open>
+			<High>96.30</High>
+			<Low>95.19</Low>
+			<Close>96.06</Close>
+			<Volume>5058000</Volume>
+			<Adj_Close>93.68</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-15</Date>
+			<Open>95.49</Open>
+			<High>95.67</High>
+			<Low>95.15</Low>
+			<Close>95.46</Close>
+			<Volume>3560600</Volume>
+			<Adj_Close>93.09</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-14</Date>
+			<Open>94.81</Open>
+			<High>95.40</High>
+			<Low>94.80</Low>
+			<Close>95.22</Close>
+			<Volume>3842200</Volume>
+			<Adj_Close>92.86</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-13</Date>
+			<Open>95.83</Open>
+			<High>95.83</High>
+			<Low>94.59</Low>
+			<Close>94.83</Close>
+			<Volume>5753200</Volume>
+			<Adj_Close>92.48</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-10</Date>
+			<Open>95.83</Open>
+			<High>96.22</High>
+			<Low>95.64</Low>
+			<Close>95.80</Close>
+			<Volume>5512200</Volume>
+			<Adj_Close>93.42</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-09</Date>
+			<Open>96.24</Open>
+			<High>96.35</High>
+			<Low>95.25</Low>
+			<Close>95.46</Close>
+			<Volume>7709000</Volume>
+			<Adj_Close>93.09</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-08</Date>
+			<Open>95.55</Open>
+			<High>95.71</High>
+			<Low>95.00</Low>
+			<Close>95.41</Close>
+			<Volume>7669800</Volume>
+			<Adj_Close>93.04</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-07</Date>
+			<Open>96.38</Open>
+			<High>97.08</High>
+			<Low>96.13</Low>
+			<Close>96.38</Close>
+			<Volume>4881800</Volume>
+			<Adj_Close>93.99</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-06</Date>
+			<Open>96.62</Open>
+			<High>96.62</High>
+			<Low>95.52</Low>
+			<Close>95.85</Close>
+			<Volume>5022700</Volume>
+			<Adj_Close>93.47</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-03</Date>
+			<Open>96.90</Open>
+			<High>97.03</High>
+			<Low>96.50</Low>
+			<Close>96.54</Close>
+			<Volume>2965300</Volume>
+			<Adj_Close>94.15</Adj_Close>
+		</quote>
+		<quote Symbol="MCD">
+			<Date>2014-01-02</Date>
+			<Open>96.81</Open>
+			<High>97.03</High>
+			<Low>96.26</Low>
+			<Close>96.41</Close>
+			<Volume>2925800</Volume>
+			<Adj_Close>94.02</Adj_Close>
+		</quote>
+	</results>
+</query><!-- total: 677 -->
+<!-- engine2.yql.bf1.yahoo.com -->

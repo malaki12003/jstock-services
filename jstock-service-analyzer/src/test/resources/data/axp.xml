@@ -1,0 +1,1597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:yahoo="http://www.yahooapis.com/v1/base.rng"
+	yahoo:count="174" yahoo:created="2014-11-16T08:42:49Z" yahoo:lang="es-ES">
+	<diagnostics>
+		<url execution-start-time="0" execution-stop-time="1"
+			execution-time="1"><![CDATA[http://www.datatables.org/yahoo/finance/yahoo.finance.historicaldata.xml]]></url>
+		<publiclyCallable>true</publiclyCallable>
+		<cache execution-start-time="4" execution-stop-time="4"
+			execution-time="0" method="GET" type="MEMCACHED"><![CDATA[8e895814df79985901fad44f748a014a]]></cache>
+		<url execution-start-time="5" execution-stop-time="26"
+			execution-time="21"><![CDATA[http://ichart.finance.yahoo.com/table.csv?g=d&f=2014&e=7&c=2014&b=30&a=0&d=9&s=AXP]]></url>
+		<query execution-start-time="4" execution-stop-time="28"
+			execution-time="24"
+			params="{url=[http://ichart.finance.yahoo.com/table.csv?g=d&amp;f=2014&amp;e=7&amp;c=2014&amp;b=30&amp;a=0&amp;d=9&amp;s=AXP]}"><![CDATA[select * from csv(0,1) where url=@url]]></query>
+		<cache execution-start-time="28" execution-stop-time="29"
+			execution-time="1" method="GET" type="MEMCACHED"><![CDATA[9d6f436fe2673e4a34eae7e0616327ff]]></cache>
+		<url execution-start-time="29" execution-stop-time="50"
+			execution-time="21"><![CDATA[http://ichart.finance.yahoo.com/table.csv?g=d&f=2014&e=7&c=2014&b=30&a=0&d=9&s=AXP]]></url>
+		<query execution-start-time="29" execution-stop-time="52"
+			execution-time="23"
+			params="{columnsNames=[Date,Open,High,Low,Close,Volume,Adj_Close], url=[http://ichart.finance.yahoo.com/table.csv?g=d&amp;f=2014&amp;e=7&amp;c=2014&amp;b=30&amp;a=0&amp;d=9&amp;s=AXP]}"><![CDATA[select * from csv(2,0) where url=@url and columns=@columnsNames]]></query>
+		<javascript execution-start-time="3" execution-stop-time="384"
+			execution-time="380" instructions-used="11617855" table-name="yahoo.finance.historicaldata"></javascript>
+		<user-time>388</user-time>
+		<service-time>44</service-time>
+		<build-version>0.2.212</build-version>
+	</diagnostics>
+	<results>
+		<quote Symbol="AXP">
+			<Date>2014-10-07</Date>
+			<Open>86.45</Open>
+			<High>86.45</High>
+			<Low>85.33</Low>
+			<Close>85.35</Close>
+			<Volume>3905000</Volume>
+			<Adj_Close>85.35</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-10-06</Date>
+			<Open>87.68</Open>
+			<High>87.97</High>
+			<Low>86.76</Low>
+			<Close>87.03</Close>
+			<Volume>3147300</Volume>
+			<Adj_Close>87.03</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-10-03</Date>
+			<Open>86.66</Open>
+			<High>87.31</High>
+			<Low>86.22</Low>
+			<Close>87.16</Close>
+			<Volume>4601400</Volume>
+			<Adj_Close>87.16</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-10-02</Date>
+			<Open>86.39</Open>
+			<High>86.50</High>
+			<Low>85.06</Low>
+			<Close>85.87</Close>
+			<Volume>4216800</Volume>
+			<Adj_Close>85.87</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-10-01</Date>
+			<Open>86.90</Open>
+			<High>87.31</High>
+			<Low>85.51</Low>
+			<Close>85.81</Close>
+			<Volume>4777800</Volume>
+			<Adj_Close>85.81</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-30</Date>
+			<Open>88.20</Open>
+			<High>88.32</High>
+			<Low>87.35</Low>
+			<Close>87.54</Close>
+			<Volume>3867100</Volume>
+			<Adj_Close>87.28</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-29</Date>
+			<Open>87.63</Open>
+			<High>88.03</High>
+			<Low>87.14</Low>
+			<Close>87.95</Close>
+			<Volume>3304100</Volume>
+			<Adj_Close>87.69</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-26</Date>
+			<Open>87.16</Open>
+			<High>88.67</High>
+			<Low>86.95</Low>
+			<Close>88.37</Close>
+			<Volume>4480300</Volume>
+			<Adj_Close>88.11</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-25</Date>
+			<Open>88.51</Open>
+			<High>88.82</High>
+			<Low>86.76</Low>
+			<Close>86.76</Close>
+			<Volume>5648000</Volume>
+			<Adj_Close>86.50</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-24</Date>
+			<Open>88.47</Open>
+			<High>88.65</High>
+			<Low>87.87</Low>
+			<Close>88.52</Close>
+			<Volume>5089900</Volume>
+			<Adj_Close>88.26</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-23</Date>
+			<Open>88.55</Open>
+			<High>89.26</High>
+			<Low>88.23</Low>
+			<Close>88.31</Close>
+			<Volume>3711000</Volume>
+			<Adj_Close>88.05</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-22</Date>
+			<Open>89.58</Open>
+			<High>90.09</High>
+			<Low>88.90</Low>
+			<Close>88.99</Close>
+			<Volume>3134700</Volume>
+			<Adj_Close>88.73</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-19</Date>
+			<Open>90.68</Open>
+			<High>90.68</High>
+			<Low>89.42</Low>
+			<Close>89.70</Close>
+			<Volume>7118600</Volume>
+			<Adj_Close>89.43</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-18</Date>
+			<Open>89.33</Open>
+			<High>90.59</High>
+			<Low>89.31</Low>
+			<Close>90.10</Close>
+			<Volume>4309800</Volume>
+			<Adj_Close>89.83</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-17</Date>
+			<Open>88.61</Open>
+			<High>89.56</High>
+			<Low>88.33</Low>
+			<Close>89.07</Close>
+			<Volume>4460700</Volume>
+			<Adj_Close>88.81</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-16</Date>
+			<Open>87.16</Open>
+			<High>88.70</High>
+			<Low>86.88</Low>
+			<Close>88.36</Close>
+			<Volume>5946200</Volume>
+			<Adj_Close>88.10</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-15</Date>
+			<Open>88.35</Open>
+			<High>88.35</High>
+			<Low>87.11</Low>
+			<Close>87.38</Close>
+			<Volume>3983800</Volume>
+			<Adj_Close>87.12</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-12</Date>
+			<Open>88.18</Open>
+			<High>88.30</High>
+			<Low>87.44</Low>
+			<Close>87.64</Close>
+			<Volume>4739100</Volume>
+			<Adj_Close>87.38</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-11</Date>
+			<Open>88.01</Open>
+			<High>88.60</High>
+			<Low>87.88</Low>
+			<Close>88.42</Close>
+			<Volume>2757000</Volume>
+			<Adj_Close>88.16</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-10</Date>
+			<Open>88.10</Open>
+			<High>88.66</High>
+			<Low>88.01</Low>
+			<Close>88.41</Close>
+			<Volume>3471000</Volume>
+			<Adj_Close>88.15</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-09</Date>
+			<Open>88.85</Open>
+			<High>88.90</High>
+			<Low>87.75</Low>
+			<Close>87.90</Close>
+			<Volume>4014300</Volume>
+			<Adj_Close>87.64</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-08</Date>
+			<Open>89.40</Open>
+			<High>89.83</High>
+			<Low>88.62</Low>
+			<Close>88.93</Close>
+			<Volume>3617600</Volume>
+			<Adj_Close>88.67</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-05</Date>
+			<Open>89.64</Open>
+			<High>89.74</High>
+			<Low>89.02</Low>
+			<Close>89.61</Close>
+			<Volume>2571200</Volume>
+			<Adj_Close>89.34</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-04</Date>
+			<Open>90.11</Open>
+			<High>90.46</High>
+			<Low>89.42</Low>
+			<Close>89.65</Close>
+			<Volume>2594100</Volume>
+			<Adj_Close>89.38</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-03</Date>
+			<Open>90.13</Open>
+			<High>90.49</High>
+			<Low>90.00</Low>
+			<Close>90.14</Close>
+			<Volume>2930800</Volume>
+			<Adj_Close>89.87</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-09-02</Date>
+			<Open>89.90</Open>
+			<High>90.13</High>
+			<Low>89.28</Low>
+			<Close>89.72</Close>
+			<Volume>3592100</Volume>
+			<Adj_Close>89.45</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-29</Date>
+			<Open>89.37</Open>
+			<High>89.70</High>
+			<Low>89.09</Low>
+			<Close>89.55</Close>
+			<Volume>2672700</Volume>
+			<Adj_Close>89.28</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-28</Date>
+			<Open>88.84</Open>
+			<High>89.33</High>
+			<Low>88.61</Low>
+			<Close>89.02</Close>
+			<Volume>3324900</Volume>
+			<Adj_Close>88.76</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-27</Date>
+			<Open>89.25</Open>
+			<High>89.59</High>
+			<Low>88.99</Low>
+			<Close>89.24</Close>
+			<Volume>2632300</Volume>
+			<Adj_Close>88.97</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-26</Date>
+			<Open>89.61</Open>
+			<High>89.93</High>
+			<Low>89.08</Low>
+			<Close>89.15</Close>
+			<Volume>2934600</Volume>
+			<Adj_Close>88.89</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-25</Date>
+			<Open>89.56</Open>
+			<High>90.22</High>
+			<Low>89.32</Low>
+			<Close>89.59</Close>
+			<Volume>3730000</Volume>
+			<Adj_Close>89.32</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-22</Date>
+			<Open>88.89</Open>
+			<High>89.51</High>
+			<Low>88.83</Low>
+			<Close>88.88</Close>
+			<Volume>2796200</Volume>
+			<Adj_Close>88.62</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-21</Date>
+			<Open>88.64</Open>
+			<High>89.33</High>
+			<Low>88.59</Low>
+			<Close>89.14</Close>
+			<Volume>3019300</Volume>
+			<Adj_Close>88.88</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-20</Date>
+			<Open>88.01</Open>
+			<High>88.65</High>
+			<Low>87.90</Low>
+			<Close>88.49</Close>
+			<Volume>3142900</Volume>
+			<Adj_Close>88.23</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-19</Date>
+			<Open>87.58</Open>
+			<High>88.28</High>
+			<Low>87.45</Low>
+			<Close>88.12</Close>
+			<Volume>3523700</Volume>
+			<Adj_Close>87.86</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-18</Date>
+			<Open>87.29</Open>
+			<High>87.48</High>
+			<Low>86.98</Low>
+			<Close>87.16</Close>
+			<Volume>2662100</Volume>
+			<Adj_Close>86.90</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-15</Date>
+			<Open>87.78</Open>
+			<High>87.88</High>
+			<Low>86.23</Low>
+			<Close>86.60</Close>
+			<Volume>3290800</Volume>
+			<Adj_Close>86.34</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-14</Date>
+			<Open>87.50</Open>
+			<High>87.80</High>
+			<Low>87.10</Low>
+			<Close>87.27</Close>
+			<Volume>3498800</Volume>
+			<Adj_Close>87.01</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-13</Date>
+			<Open>87.44</Open>
+			<High>88.07</High>
+			<Low>87.16</Low>
+			<Close>87.40</Close>
+			<Volume>2590600</Volume>
+			<Adj_Close>87.14</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-12</Date>
+			<Open>87.00</Open>
+			<High>87.09</High>
+			<Low>86.70</Low>
+			<Close>87.08</Close>
+			<Volume>3106600</Volume>
+			<Adj_Close>86.82</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-11</Date>
+			<Open>87.92</Open>
+			<High>88.16</High>
+			<Low>86.94</Low>
+			<Close>86.95</Close>
+			<Volume>3594400</Volume>
+			<Adj_Close>86.69</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-08</Date>
+			<Open>86.09</Open>
+			<High>87.51</High>
+			<Low>85.91</Low>
+			<Close>87.47</Close>
+			<Volume>4206700</Volume>
+			<Adj_Close>87.21</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-07</Date>
+			<Open>86.79</Open>
+			<High>87.14</High>
+			<Low>85.89</Low>
+			<Close>86.02</Close>
+			<Volume>4539100</Volume>
+			<Adj_Close>85.76</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-06</Date>
+			<Open>86.04</Open>
+			<High>86.79</High>
+			<Low>86.00</Low>
+			<Close>86.40</Close>
+			<Volume>4805600</Volume>
+			<Adj_Close>86.14</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-05</Date>
+			<Open>86.65</Open>
+			<High>87.02</High>
+			<Low>85.89</Low>
+			<Close>86.36</Close>
+			<Volume>5004400</Volume>
+			<Adj_Close>86.10</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-04</Date>
+			<Open>86.60</Open>
+			<High>87.24</High>
+			<Low>86.45</Low>
+			<Close>86.93</Close>
+			<Volume>5743800</Volume>
+			<Adj_Close>86.67</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-08-01</Date>
+			<Open>87.41</Open>
+			<High>87.74</High>
+			<Low>85.75</Low>
+			<Close>86.47</Close>
+			<Volume>12258300</Volume>
+			<Adj_Close>86.21</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-31</Date>
+			<Open>90.07</Open>
+			<High>90.26</High>
+			<Low>87.99</Low>
+			<Close>88.00</Close>
+			<Volume>7561100</Volume>
+			<Adj_Close>87.74</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-30</Date>
+			<Open>92.11</Open>
+			<High>92.32</High>
+			<Low>90.04</Low>
+			<Close>90.91</Close>
+			<Volume>5069300</Volume>
+			<Adj_Close>90.64</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-29</Date>
+			<Open>91.83</Open>
+			<High>92.23</High>
+			<Low>91.51</Low>
+			<Close>91.71</Close>
+			<Volume>4773300</Volume>
+			<Adj_Close>91.44</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-28</Date>
+			<Open>91.90</Open>
+			<High>92.03</High>
+			<Low>90.90</Low>
+			<Close>91.86</Close>
+			<Volume>4274000</Volume>
+			<Adj_Close>91.59</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-25</Date>
+			<Open>92.74</Open>
+			<High>93.07</High>
+			<Low>91.58</Low>
+			<Close>91.93</Close>
+			<Volume>3903500</Volume>
+			<Adj_Close>91.66</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-24</Date>
+			<Open>93.33</Open>
+			<High>93.62</High>
+			<Low>92.85</Low>
+			<Close>93.15</Close>
+			<Volume>3023400</Volume>
+			<Adj_Close>92.87</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-23</Date>
+			<Open>93.19</Open>
+			<High>93.59</High>
+			<Low>92.82</Low>
+			<Close>93.28</Close>
+			<Volume>1984800</Volume>
+			<Adj_Close>93.00</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-22</Date>
+			<Open>93.51</Open>
+			<High>94.06</High>
+			<Low>93.22</Low>
+			<Close>93.37</Close>
+			<Volume>2411600</Volume>
+			<Adj_Close>93.09</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-21</Date>
+			<Open>93.29</Open>
+			<High>93.40</High>
+			<Low>92.38</Low>
+			<Close>92.88</Close>
+			<Volume>2321800</Volume>
+			<Adj_Close>92.60</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-18</Date>
+			<Open>93.32</Open>
+			<High>93.93</High>
+			<Low>93.10</Low>
+			<Close>93.53</Close>
+			<Volume>3363000</Volume>
+			<Adj_Close>93.25</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-17</Date>
+			<Open>93.96</Open>
+			<High>94.70</High>
+			<Low>92.91</Low>
+			<Close>92.99</Close>
+			<Volume>3110800</Volume>
+			<Adj_Close>92.71</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-16</Date>
+			<Open>94.81</Open>
+			<High>95.09</High>
+			<Low>94.27</Low>
+			<Close>94.47</Close>
+			<Volume>2738000</Volume>
+			<Adj_Close>94.19</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-15</Date>
+			<Open>94.79</Open>
+			<High>95.16</High>
+			<Low>94.00</Low>
+			<Close>94.45</Close>
+			<Volume>3499200</Volume>
+			<Adj_Close>94.17</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-14</Date>
+			<Open>95.23</Open>
+			<High>95.58</High>
+			<Low>94.43</Low>
+			<Close>94.54</Close>
+			<Volume>2388000</Volume>
+			<Adj_Close>94.26</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-11</Date>
+			<Open>94.27</Open>
+			<High>94.59</High>
+			<Low>93.75</Low>
+			<Close>94.47</Close>
+			<Volume>2108500</Volume>
+			<Adj_Close>94.19</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-10</Date>
+			<Open>93.55</Open>
+			<High>94.81</High>
+			<Low>93.16</Low>
+			<Close>94.46</Close>
+			<Volume>2230000</Volume>
+			<Adj_Close>94.18</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-09</Date>
+			<Open>95.44</Open>
+			<High>95.55</High>
+			<Low>94.41</Low>
+			<Close>94.74</Close>
+			<Volume>2645500</Volume>
+			<Adj_Close>94.46</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-08</Date>
+			<Open>94.92</Open>
+			<High>95.01</High>
+			<Low>93.57</Low>
+			<Close>94.57</Close>
+			<Volume>2828700</Volume>
+			<Adj_Close>94.03</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-07</Date>
+			<Open>95.50</Open>
+			<High>95.66</High>
+			<Low>95.12</Low>
+			<Close>95.40</Close>
+			<Volume>1962800</Volume>
+			<Adj_Close>94.86</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-03</Date>
+			<Open>95.58</Open>
+			<High>95.94</High>
+			<Low>95.22</Low>
+			<Close>95.84</Close>
+			<Volume>1633800</Volume>
+			<Adj_Close>95.29</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-02</Date>
+			<Open>95.19</Open>
+			<High>95.78</High>
+			<Low>95.06</Low>
+			<Close>95.21</Close>
+			<Volume>1595500</Volume>
+			<Adj_Close>94.67</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-07-01</Date>
+			<Open>95.42</Open>
+			<High>96.24</High>
+			<Low>95.28</Low>
+			<Close>95.35</Close>
+			<Volume>3026300</Volume>
+			<Adj_Close>94.81</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-30</Date>
+			<Open>95.00</Open>
+			<High>95.34</High>
+			<Low>94.55</Low>
+			<Close>94.87</Close>
+			<Volume>2634300</Volume>
+			<Adj_Close>94.33</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-27</Date>
+			<Open>94.25</Open>
+			<High>95.05</High>
+			<Low>94.13</Low>
+			<Close>94.93</Close>
+			<Volume>3630700</Volume>
+			<Adj_Close>94.39</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-26</Date>
+			<Open>94.83</Open>
+			<High>94.94</High>
+			<Low>93.54</Low>
+			<Close>94.30</Close>
+			<Volume>2594800</Volume>
+			<Adj_Close>93.76</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-25</Date>
+			<Open>94.26</Open>
+			<High>95.21</High>
+			<Low>94.20</Low>
+			<Close>94.64</Close>
+			<Volume>2398400</Volume>
+			<Adj_Close>94.10</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-24</Date>
+			<Open>95.09</Open>
+			<High>95.55</High>
+			<Low>94.25</Low>
+			<Close>94.43</Close>
+			<Volume>2088700</Volume>
+			<Adj_Close>93.89</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-23</Date>
+			<Open>95.33</Open>
+			<High>95.75</High>
+			<Low>94.79</Low>
+			<Close>95.51</Close>
+			<Volume>2102500</Volume>
+			<Adj_Close>94.96</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-20</Date>
+			<Open>95.58</Open>
+			<High>96.04</High>
+			<Low>95.03</Low>
+			<Close>95.54</Close>
+			<Volume>5387400</Volume>
+			<Adj_Close>94.99</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-19</Date>
+			<Open>95.46</Open>
+			<High>95.70</High>
+			<Low>94.53</Low>
+			<Close>95.07</Close>
+			<Volume>3206400</Volume>
+			<Adj_Close>94.53</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-18</Date>
+			<Open>94.75</Open>
+			<High>95.59</High>
+			<Low>94.08</Low>
+			<Close>95.56</Close>
+			<Volume>2454800</Volume>
+			<Adj_Close>95.01</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-17</Date>
+			<Open>94.37</Open>
+			<High>95.20</High>
+			<Low>94.01</Low>
+			<Close>94.66</Close>
+			<Volume>2572300</Volume>
+			<Adj_Close>94.12</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-16</Date>
+			<Open>94.36</Open>
+			<High>94.75</High>
+			<Low>93.84</Low>
+			<Close>94.37</Close>
+			<Volume>2832500</Volume>
+			<Adj_Close>93.83</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-13</Date>
+			<Open>94.95</Open>
+			<High>95.17</High>
+			<Low>94.38</Low>
+			<Close>94.85</Close>
+			<Volume>1793000</Volume>
+			<Adj_Close>94.31</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-12</Date>
+			<Open>95.35</Open>
+			<High>95.48</High>
+			<Low>94.36</Low>
+			<Close>94.76</Close>
+			<Volume>2870500</Volume>
+			<Adj_Close>94.22</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-11</Date>
+			<Open>94.94</Open>
+			<High>95.26</High>
+			<Low>94.64</Low>
+			<Close>95.08</Close>
+			<Volume>1884000</Volume>
+			<Adj_Close>94.54</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-10</Date>
+			<Open>95.09</Open>
+			<High>95.39</High>
+			<Low>94.68</Low>
+			<Close>95.28</Close>
+			<Volume>2418300</Volume>
+			<Adj_Close>94.74</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-09</Date>
+			<Open>95.08</Open>
+			<High>95.88</High>
+			<Low>94.65</Low>
+			<Close>95.57</Close>
+			<Volume>3825200</Volume>
+			<Adj_Close>95.02</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-06</Date>
+			<Open>92.94</Open>
+			<High>94.94</High>
+			<Low>92.82</Low>
+			<Close>94.91</Close>
+			<Volume>4550800</Volume>
+			<Adj_Close>94.37</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-05</Date>
+			<Open>91.92</Open>
+			<High>93.21</High>
+			<Low>91.53</Low>
+			<Close>92.80</Close>
+			<Volume>3219200</Volume>
+			<Adj_Close>92.27</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-04</Date>
+			<Open>91.59</Open>
+			<High>91.90</High>
+			<Low>91.33</Low>
+			<Close>91.81</Close>
+			<Volume>2637000</Volume>
+			<Adj_Close>91.29</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-03</Date>
+			<Open>91.61</Open>
+			<High>91.85</High>
+			<Low>91.27</Low>
+			<Close>91.73</Close>
+			<Volume>2589100</Volume>
+			<Adj_Close>91.21</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-06-02</Date>
+			<Open>91.79</Open>
+			<High>92.11</High>
+			<Low>91.43</Low>
+			<Close>91.89</Close>
+			<Volume>2832100</Volume>
+			<Adj_Close>91.37</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-30</Date>
+			<Open>91.00</Open>
+			<High>91.68</High>
+			<Low>90.89</Low>
+			<Close>91.50</Close>
+			<Volume>3594800</Volume>
+			<Adj_Close>90.98</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-29</Date>
+			<Open>91.12</Open>
+			<High>91.30</High>
+			<Low>90.53</Low>
+			<Close>91.28</Close>
+			<Volume>2668500</Volume>
+			<Adj_Close>90.76</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-28</Date>
+			<Open>91.31</Open>
+			<High>91.36</High>
+			<Low>90.63</Low>
+			<Close>91.06</Close>
+			<Volume>2466800</Volume>
+			<Adj_Close>90.54</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-27</Date>
+			<Open>89.60</Open>
+			<High>91.47</High>
+			<Low>89.35</Low>
+			<Close>91.39</Close>
+			<Volume>5093800</Volume>
+			<Adj_Close>90.87</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-23</Date>
+			<Open>88.11</Open>
+			<High>88.86</High>
+			<Low>88.00</Low>
+			<Close>88.78</Close>
+			<Volume>1858200</Volume>
+			<Adj_Close>88.27</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-22</Date>
+			<Open>87.79</Open>
+			<High>88.39</High>
+			<Low>87.55</Low>
+			<Close>88.15</Close>
+			<Volume>2654800</Volume>
+			<Adj_Close>87.65</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-21</Date>
+			<Open>87.57</Open>
+			<High>88.14</High>
+			<Low>87.38</Low>
+			<Close>87.86</Close>
+			<Volume>2525600</Volume>
+			<Adj_Close>87.36</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-20</Date>
+			<Open>87.82</Open>
+			<High>88.05</High>
+			<Low>86.86</Low>
+			<Close>87.09</Close>
+			<Volume>2798400</Volume>
+			<Adj_Close>86.59</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-19</Date>
+			<Open>87.18</Open>
+			<High>88.22</High>
+			<Low>87.11</Low>
+			<Close>88.12</Close>
+			<Volume>2000300</Volume>
+			<Adj_Close>87.62</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-16</Date>
+			<Open>87.60</Open>
+			<High>87.76</High>
+			<Low>86.90</Low>
+			<Close>87.50</Close>
+			<Volume>3062400</Volume>
+			<Adj_Close>87.00</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-15</Date>
+			<Open>88.20</Open>
+			<High>88.58</High>
+			<Low>87.11</Low>
+			<Close>87.60</Close>
+			<Volume>3324400</Volume>
+			<Adj_Close>87.10</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-14</Date>
+			<Open>89.17</Open>
+			<High>89.43</High>
+			<Low>88.31</Low>
+			<Close>88.46</Close>
+			<Volume>2238500</Volume>
+			<Adj_Close>87.95</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-13</Date>
+			<Open>89.65</Open>
+			<High>90.00</High>
+			<Low>89.04</Low>
+			<Close>89.09</Close>
+			<Volume>2298500</Volume>
+			<Adj_Close>88.58</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-12</Date>
+			<Open>89.42</Open>
+			<High>89.97</High>
+			<Low>89.32</Low>
+			<Close>89.66</Close>
+			<Volume>2343800</Volume>
+			<Adj_Close>89.15</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-09</Date>
+			<Open>88.46</Open>
+			<High>89.03</High>
+			<Low>88.13</Low>
+			<Close>88.84</Close>
+			<Volume>2344700</Volume>
+			<Adj_Close>88.33</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-08</Date>
+			<Open>87.88</Open>
+			<High>89.28</High>
+			<Low>87.66</Low>
+			<Close>88.62</Close>
+			<Volume>4220200</Volume>
+			<Adj_Close>88.11</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-07</Date>
+			<Open>86.79</Open>
+			<High>88.05</High>
+			<Low>86.11</Low>
+			<Close>87.98</Close>
+			<Volume>4601500</Volume>
+			<Adj_Close>87.48</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-06</Date>
+			<Open>87.25</Open>
+			<High>87.25</High>
+			<Low>86.08</Low>
+			<Close>86.20</Close>
+			<Volume>3269400</Volume>
+			<Adj_Close>85.71</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-05</Date>
+			<Open>86.00</Open>
+			<High>87.42</High>
+			<Low>85.75</Low>
+			<Close>87.36</Close>
+			<Volume>3340000</Volume>
+			<Adj_Close>86.86</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-02</Date>
+			<Open>86.77</Open>
+			<High>87.31</High>
+			<Low>86.41</Low>
+			<Close>86.93</Close>
+			<Volume>3707400</Volume>
+			<Adj_Close>86.43</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-05-01</Date>
+			<Open>87.53</Open>
+			<High>87.58</High>
+			<Low>86.33</Low>
+			<Close>86.82</Close>
+			<Volume>4679900</Volume>
+			<Adj_Close>86.32</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-30</Date>
+			<Open>87.61</Open>
+			<High>87.66</High>
+			<Low>86.96</Low>
+			<Close>87.43</Close>
+			<Volume>4351600</Volume>
+			<Adj_Close>86.93</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-29</Date>
+			<Open>87.34</Open>
+			<High>87.95</High>
+			<Low>87.19</Low>
+			<Close>87.79</Close>
+			<Volume>2852900</Volume>
+			<Adj_Close>87.29</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-28</Date>
+			<Open>87.44</Open>
+			<High>87.58</High>
+			<Low>85.85</Low>
+			<Close>87.06</Close>
+			<Volume>4760400</Volume>
+			<Adj_Close>86.56</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-25</Date>
+			<Open>87.02</Open>
+			<High>87.30</High>
+			<Low>86.62</Low>
+			<Close>87.03</Close>
+			<Volume>4226100</Volume>
+			<Adj_Close>86.53</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-24</Date>
+			<Open>87.26</Open>
+			<High>87.98</High>
+			<Low>86.91</Low>
+			<Close>87.41</Close>
+			<Volume>3187000</Volume>
+			<Adj_Close>86.91</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-23</Date>
+			<Open>87.01</Open>
+			<High>87.64</High>
+			<Low>86.67</Low>
+			<Close>87.13</Close>
+			<Volume>3788200</Volume>
+			<Adj_Close>86.63</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-22</Date>
+			<Open>86.71</Open>
+			<High>87.44</High>
+			<Low>86.43</Low>
+			<Close>87.07</Close>
+			<Volume>3420400</Volume>
+			<Adj_Close>86.57</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-21</Date>
+			<Open>86.38</Open>
+			<High>86.86</High>
+			<Low>86.16</Low>
+			<Close>86.67</Close>
+			<Volume>3762300</Volume>
+			<Adj_Close>86.18</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-17</Date>
+			<Open>87.16</Open>
+			<High>87.92</High>
+			<Low>85.10</Low>
+			<Close>86.22</Close>
+			<Volume>9244400</Volume>
+			<Adj_Close>85.73</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-16</Date>
+			<Open>86.84</Open>
+			<High>87.48</High>
+			<Low>86.48</Low>
+			<Close>87.40</Close>
+			<Volume>4055100</Volume>
+			<Adj_Close>86.90</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-15</Date>
+			<Open>85.87</Open>
+			<High>86.73</High>
+			<Low>84.32</Low>
+			<Close>86.04</Close>
+			<Volume>3741700</Volume>
+			<Adj_Close>85.55</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-14</Date>
+			<Open>85.09</Open>
+			<High>86.34</High>
+			<Low>84.04</Low>
+			<Close>85.50</Close>
+			<Volume>4011900</Volume>
+			<Adj_Close>85.01</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-11</Date>
+			<Open>84.90</Open>
+			<High>85.45</High>
+			<Low>83.99</Low>
+			<Close>84.54</Close>
+			<Volume>4014300</Volume>
+			<Adj_Close>84.06</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-10</Date>
+			<Open>88.47</Open>
+			<High>88.75</High>
+			<Low>85.30</Low>
+			<Close>85.36</Close>
+			<Volume>5213800</Volume>
+			<Adj_Close>84.87</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-09</Date>
+			<Open>86.90</Open>
+			<High>88.72</High>
+			<Low>86.64</Low>
+			<Close>88.72</Close>
+			<Volume>3592900</Volume>
+			<Adj_Close>88.21</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-08</Date>
+			<Open>86.63</Open>
+			<High>86.80</High>
+			<Low>85.58</Low>
+			<Close>86.49</Close>
+			<Volume>3880300</Volume>
+			<Adj_Close>86.00</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-07</Date>
+			<Open>89.03</Open>
+			<High>89.43</High>
+			<Low>86.55</Low>
+			<Close>86.60</Close>
+			<Volume>5557600</Volume>
+			<Adj_Close>86.11</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-04</Date>
+			<Open>91.17</Open>
+			<High>91.40</High>
+			<Low>89.07</Low>
+			<Close>89.17</Close>
+			<Volume>2933600</Volume>
+			<Adj_Close>88.66</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-03</Date>
+			<Open>90.67</Open>
+			<High>91.20</High>
+			<Low>90.40</Low>
+			<Close>90.98</Close>
+			<Volume>2483600</Volume>
+			<Adj_Close>90.46</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-02</Date>
+			<Open>90.85</Open>
+			<High>91.09</High>
+			<Low>90.13</Low>
+			<Close>90.40</Close>
+			<Volume>2886700</Volume>
+			<Adj_Close>89.88</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-04-01</Date>
+			<Open>90.40</Open>
+			<High>91.23</High>
+			<Low>90.21</Low>
+			<Close>91.17</Close>
+			<Volume>2821600</Volume>
+			<Adj_Close>90.42</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-31</Date>
+			<Open>91.08</Open>
+			<High>91.94</High>
+			<Low>89.88</Low>
+			<Close>90.03</Close>
+			<Volume>5172400</Volume>
+			<Adj_Close>89.29</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-28</Date>
+			<Open>90.27</Open>
+			<High>91.56</High>
+			<Low>90.00</Low>
+			<Close>90.46</Close>
+			<Volume>3138900</Volume>
+			<Adj_Close>89.72</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-27</Date>
+			<Open>89.70</Open>
+			<High>90.43</High>
+			<Low>89.27</Low>
+			<Close>89.99</Close>
+			<Volume>3602800</Volume>
+			<Adj_Close>89.25</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-26</Date>
+			<Open>91.36</Open>
+			<High>91.69</High>
+			<Low>89.63</Low>
+			<Close>89.66</Close>
+			<Volume>3011200</Volume>
+			<Adj_Close>88.92</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-25</Date>
+			<Open>91.37</Open>
+			<High>91.90</High>
+			<Low>90.63</Low>
+			<Close>90.84</Close>
+			<Volume>2420000</Volume>
+			<Adj_Close>90.09</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-24</Date>
+			<Open>91.64</Open>
+			<High>91.75</High>
+			<Low>90.29</Low>
+			<Close>91.01</Close>
+			<Volume>2520600</Volume>
+			<Adj_Close>90.26</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-21</Date>
+			<Open>92.78</Open>
+			<High>93.72</High>
+			<Low>91.36</Low>
+			<Close>91.52</Close>
+			<Volume>6684500</Volume>
+			<Adj_Close>90.77</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-20</Date>
+			<Open>90.48</Open>
+			<High>91.90</High>
+			<Low>90.23</Low>
+			<Close>91.69</Close>
+			<Volume>3779700</Volume>
+			<Adj_Close>90.94</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-19</Date>
+			<Open>91.67</Open>
+			<High>91.96</High>
+			<Low>90.28</Low>
+			<Close>90.73</Close>
+			<Volume>3425700</Volume>
+			<Adj_Close>89.98</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-18</Date>
+			<Open>91.27</Open>
+			<High>91.97</High>
+			<Low>91.13</Low>
+			<Close>91.59</Close>
+			<Volume>2348300</Volume>
+			<Adj_Close>90.84</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-17</Date>
+			<Open>90.51</Open>
+			<High>91.73</High>
+			<Low>90.49</Low>
+			<Close>91.26</Close>
+			<Volume>3033000</Volume>
+			<Adj_Close>90.51</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-14</Date>
+			<Open>90.55</Open>
+			<High>91.22</High>
+			<Low>89.64</Low>
+			<Close>90.17</Close>
+			<Volume>3583900</Volume>
+			<Adj_Close>89.43</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-13</Date>
+			<Open>93.20</Open>
+			<High>93.48</High>
+			<Low>90.41</Low>
+			<Close>90.69</Close>
+			<Volume>3990200</Volume>
+			<Adj_Close>89.94</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-12</Date>
+			<Open>92.68</Open>
+			<High>92.92</High>
+			<Low>91.90</Low>
+			<Close>92.90</Close>
+			<Volume>2486100</Volume>
+			<Adj_Close>92.14</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-11</Date>
+			<Open>93.83</Open>
+			<High>93.88</High>
+			<Low>93.03</Low>
+			<Close>93.20</Close>
+			<Volume>1946200</Volume>
+			<Adj_Close>92.43</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-10</Date>
+			<Open>93.62</Open>
+			<High>93.88</High>
+			<Low>93.14</Low>
+			<Close>93.70</Close>
+			<Volume>2218700</Volume>
+			<Adj_Close>92.93</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-07</Date>
+			<Open>94.11</Open>
+			<High>94.35</High>
+			<Low>93.36</Low>
+			<Close>93.86</Close>
+			<Volume>3864600</Volume>
+			<Adj_Close>93.09</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-06</Date>
+			<Open>92.56</Open>
+			<High>93.64</High>
+			<Low>92.36</Low>
+			<Close>93.52</Close>
+			<Volume>3957900</Volume>
+			<Adj_Close>92.75</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-05</Date>
+			<Open>92.59</Open>
+			<High>92.59</High>
+			<Low>91.91</Low>
+			<Close>92.14</Close>
+			<Volume>3086400</Volume>
+			<Adj_Close>91.38</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-04</Date>
+			<Open>91.05</Open>
+			<High>92.68</High>
+			<Low>91.03</Low>
+			<Close>92.61</Close>
+			<Volume>3752000</Volume>
+			<Adj_Close>91.85</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-03-03</Date>
+			<Open>90.60</Open>
+			<High>90.63</High>
+			<Low>89.16</Low>
+			<Close>89.97</Close>
+			<Volume>3465300</Volume>
+			<Adj_Close>89.23</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-28</Date>
+			<Open>90.25</Open>
+			<High>92.14</High>
+			<Low>90.09</Low>
+			<Close>91.28</Close>
+			<Volume>4689200</Volume>
+			<Adj_Close>90.53</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-27</Date>
+			<Open>89.65</Open>
+			<High>90.43</High>
+			<Low>89.51</Low>
+			<Close>90.29</Close>
+			<Volume>3075600</Volume>
+			<Adj_Close>89.55</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-26</Date>
+			<Open>90.16</Open>
+			<High>90.69</High>
+			<Low>89.21</Low>
+			<Close>89.73</Close>
+			<Volume>4840200</Volume>
+			<Adj_Close>88.99</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-25</Date>
+			<Open>90.00</Open>
+			<High>90.37</High>
+			<Low>89.15</Low>
+			<Close>89.91</Close>
+			<Volume>2914800</Volume>
+			<Adj_Close>89.17</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-24</Date>
+			<Open>88.79</Open>
+			<High>90.43</High>
+			<Low>88.79</Low>
+			<Close>89.92</Close>
+			<Volume>3261200</Volume>
+			<Adj_Close>89.18</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-21</Date>
+			<Open>89.06</Open>
+			<High>89.41</High>
+			<Low>88.56</Low>
+			<Close>88.75</Close>
+			<Volume>3808700</Volume>
+			<Adj_Close>88.02</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-20</Date>
+			<Open>88.80</Open>
+			<High>89.23</High>
+			<Low>88.12</Low>
+			<Close>89.01</Close>
+			<Volume>4411800</Volume>
+			<Adj_Close>88.28</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-19</Date>
+			<Open>88.89</Open>
+			<High>90.32</High>
+			<Low>88.75</Low>
+			<Close>88.84</Close>
+			<Volume>4332300</Volume>
+			<Adj_Close>88.11</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-18</Date>
+			<Open>88.80</Open>
+			<High>89.14</High>
+			<Low>88.29</Low>
+			<Close>89.02</Close>
+			<Volume>3591600</Volume>
+			<Adj_Close>88.29</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-14</Date>
+			<Open>88.86</Open>
+			<High>89.27</High>
+			<Low>88.26</Low>
+			<Close>89.00</Close>
+			<Volume>2671800</Volume>
+			<Adj_Close>88.27</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-13</Date>
+			<Open>88.37</Open>
+			<High>88.98</High>
+			<Low>88.01</Low>
+			<Close>88.90</Close>
+			<Volume>2759700</Volume>
+			<Adj_Close>88.17</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-12</Date>
+			<Open>88.69</Open>
+			<High>89.05</High>
+			<Low>88.40</Low>
+			<Close>89.02</Close>
+			<Volume>2488600</Volume>
+			<Adj_Close>88.29</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-11</Date>
+			<Open>88.36</Open>
+			<High>88.84</High>
+			<Low>88.17</Low>
+			<Close>88.58</Close>
+			<Volume>3602400</Volume>
+			<Adj_Close>87.85</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-10</Date>
+			<Open>87.83</Open>
+			<High>88.96</High>
+			<Low>87.50</Low>
+			<Close>88.34</Close>
+			<Volume>5387900</Volume>
+			<Adj_Close>87.61</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-07</Date>
+			<Open>85.96</Open>
+			<High>87.17</High>
+			<Low>85.78</Low>
+			<Close>87.00</Close>
+			<Volume>4495200</Volume>
+			<Adj_Close>86.28</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-06</Date>
+			<Open>84.50</Open>
+			<High>85.76</High>
+			<Low>84.32</Low>
+			<Close>85.69</Close>
+			<Volume>5432400</Volume>
+			<Adj_Close>84.99</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-05</Date>
+			<Open>83.51</Open>
+			<High>84.12</High>
+			<Low>82.95</Low>
+			<Close>83.72</Close>
+			<Volume>3260100</Volume>
+			<Adj_Close>83.03</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-04</Date>
+			<Open>83.19</Open>
+			<High>84.71</High>
+			<Low>82.63</Low>
+			<Close>84.00</Close>
+			<Volume>5380500</Volume>
+			<Adj_Close>83.31</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-02-03</Date>
+			<Open>84.99</Open>
+			<High>85.42</High>
+			<Low>82.77</Low>
+			<Close>82.86</Close>
+			<Volume>5769800</Volume>
+			<Adj_Close>82.18</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-01-31</Date>
+			<Open>85.28</Open>
+			<High>85.91</High>
+			<Low>84.91</Low>
+			<Close>85.02</Close>
+			<Volume>4778000</Volume>
+			<Adj_Close>84.32</Adj_Close>
+		</quote>
+		<quote Symbol="AXP">
+			<Date>2014-01-30</Date>
+			<Open>86.45</Open>
+			<High>86.98</High>
+			<Low>86.07</Low>
+			<Close>86.62</Close>
+			<Volume>4259000</Volume>
+			<Adj_Close>85.91</Adj_Close>
+		</quote>
+	</results>
+</query><!-- total: 388 -->
+<!-- engine4.yql.bf1.yahoo.com -->
